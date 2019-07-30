@@ -4,6 +4,7 @@
   "description": "The layout of the site for land rover autoservice",
   "main": "index.js",
   "dependencies": {
+    "jquery": "^3.4.1",
     "webpack": "^4.38.0"
   },
   "devDependencies": {

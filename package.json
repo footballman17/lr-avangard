@@ -5,14 +5,17 @@
   "main": "index.js",
   "dependencies": {
     "jquery": "^3.4.1",
+    "path": "^0.12.7",
     "webpack": "^4.38.0"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Valery Churbanov",
   "license": "ISC"

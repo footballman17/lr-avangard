@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
@@ -8,14 +9,19 @@ const conf = {
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'main.js',
-    publicPath: 'dist/',
+    publicPath: '/',
   },
   // показываем ошибку на экране
   devServer: {
+    contentBase: path.join(__dirname, 'dist'),
     overlay: true,
   },
   module: {
     rules: [
+      {
+        test: /\.pug$/,
+        use: 'pug-loader',
+      },
       {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
@@ -41,6 +47,9 @@ const conf = {
     ],
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.pug',
+    }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional

@@ -1,3 +1,4 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 const conf = {
@@ -9,6 +10,50 @@ const conf = {
     filename: 'main.js',
     publicPath: 'dist/',
   },
+  // показываем ошибку на экране
+  devServer: {
+    overlay: true,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          // fallback to style-loader in development
+          // process.env.NODE_ENV !== 'production'
+          //   ? 'style-loader'
+          // : MiniCssExtractPlugin.loader,
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+    ],
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
+  ],
 };
 
-module.exports = conf;
+module.exports = (env, options) => {
+  const production = options.mode === 'production';
+  conf.devtool = production
+    ? 'source-map' // карта, вынесенная в отдельный файл
+    : 'eval-sourcemap'; // карта встроенная в основной файл
+  return conf;
+};

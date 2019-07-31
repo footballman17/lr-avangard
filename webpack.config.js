@@ -1,36 +1,22 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const conf = {
-  // точка входа
-  entry: './src/index.js',
-  // итоговое название файла
-  output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: 'main.js',
-    publicPath: '/',
+  entry: {
+    app: './src/index.js',
   },
-  // показываем ошибку на экране
+  devtool: 'inline-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    overlay: true,
+    contentBase: './dist',
+    hot: true,
   },
   module: {
     rules: [
       {
         test: /\.pug$/,
-        use: 'pug-loader',
-      },
-      {
-        test: /\.m?js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-          },
-        },
+        loaders: ['html-loader', 'pug-html-loader'],
       },
       {
         test: /\.scss$/,
@@ -39,7 +25,8 @@ const conf = {
           // process.env.NODE_ENV !== 'production'
           //   ? 'style-loader'
           // : MiniCssExtractPlugin.loader,
-          MiniCssExtractPlugin.loader,
+          'style-loader',
+          // MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader',
         ],
@@ -47,8 +34,11 @@ const conf = {
     ],
   },
   plugins: [
+    // new CleanWebpackPlugin(['dist/*']) for < v2 versions of CleanWebpackPlugin
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/index.pug',
+      template: './src/index.html',
+      title: 'Hot Module Replacement',
     }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
@@ -57,6 +47,10 @@ const conf = {
       chunkFilename: '[id].css',
     }),
   ],
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
 };
 
 module.exports = (env, options) => {

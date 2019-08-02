@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Clear Sans';
+  src: local("Clear Sans"), url("/fonts/clearsans/clearsans.woff2") format("woff2"), url("/fonts/clearsans/clearsans.woff") format("woff"), url('/fonts/clearsans/clearsans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: local("Clear Sans Bold"), url("/fonts/clearsans/clearsansbold.woff2") format("woff2"), url("/fonts/clearsans/clearsansbold.woff") format("woff"), url('/fonts/clearsans/clearsansbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: bold; }
+
+// @font-face {
+//   font-family: 'Clear Sans';
+//   src: local("Clear Sans Bold"), url("/fonts/clearsans/clearsansbold.woff2") format("woff2"), url("/fonts/clearsans/clearsansbold.woff") format("woff"), url('/font/lato/clearsansbold.ttf') format('truetype');
+//   font-weight: 700;
+//   font-style: bold; }

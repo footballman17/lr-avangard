@@ -1,6 +1,33 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: green;
+// Reset
+@import 'includes/_reset';
 
-.title {
-  color: $primary-color;
+// Font
+@import 'includes/_font';
+
+// Base
+@import 'includes/_base';
+
+// Grid Bootstrap
+$min-width-tablet: 768px;
+$min-width-desktop: 992px;
+$min-width-large-desktop: 1200px;
+
+// Mobile
+@media (max-width: $min-width-tablet - 1) {
+	@import 'includes/_mobile';
+}
+
+// Tablet
+@media (min-width: $min-width-tablet) {
+	@import 'includes/_tablet';
+}
+
+// Desktop
+@media (min-width: $min-width-desktop) {
+	@import 'includes/_desktop';
+}
+
+// Large Desktop
+@media (min-width: $min-width-large-desktop) {
+	@import 'includes/_large-desktop';
 }

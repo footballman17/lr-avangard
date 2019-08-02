@@ -1,0 +1,51 @@
+@function get-rem($px) {
+  @return ($px/16)+rem;
+}
+
+@function get-em($px) {
+  @return ($px/16)+em;
+}
+
+.header-block {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: get-rem(30);
+    padding-right: get-rem(30);
+    padding-top: get-rem(40);
+    padding-bottom: get-rem(40);
+}
+
+.telephone {
+    &__link {
+        font-family: 'Clear Sans', sans-serif;
+        font-size: get-em(14);
+        font-style: bold;
+        font-weight: 700;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.logo {
+    img {
+        width: get-rem(120);
+    }
+}
+
+.menu {
+    display: flex;
+    &__text {
+        font-family: 'Clear Sans';
+        font-size: get-em(12);
+        text-transform: uppercase;
+    }
+    &__icon {
+        width: get-rem(15);
+        height: get-rem(15);
+        margin-right: get-rem(15);
+
+    }
+}

@@ -1,12 +1,38 @@
 .header-block
-	div.telephone
-		a(class ="telephone__link" href="tel:+7(495)241-29-89" title="Позвонить") +7(495) 241-29-39
-	div.logo
-		a(href="/" title="Сервис Ленд Ровер в Москве")
-			img(src="/images/common/img__logo.svg" alt="Сервис Ленд Ровер в Москве" title="Сервис Ленд Ровер в Москве")
-	div.menu
-		div
-			svg(class="menu__icon" aria-hidden="true")
-				use(xlink:href="/images/common/sprite__icons.svg#menu")
-		div
-			p.menu__text меню
+	.header-block__logo-section
+		.telephone
+			a(class ="telephone__link" href="tel:+7(495)241-29-89" title="Позвонить") +7(495) 241-29-39
+		.logo
+			a(href="/" title="Сервис Ленд Ровер в Москве")
+				img(src="/images/common/img__logo.svg" alt="Сервис Ленд Ровер в Москве" title="Сервис Ленд Ровер в Москве")
+		.menu
+			div
+				svg(class="menu__icon" aria-hidden="true")
+					use(xlink:href="/images/common/sprite__icons.svg#menu")
+			div
+				p.menu__text меню
+	.header-block__line
+		hr
+	.header-block__content-block
+		.header-block__rectangle
+		.header-block__lr
+			p.header-block__lr-text LR
+		.header-block__avangard
+			p.header-block__avangard-p Avangard
+		.header-block__car
+			img(class="header-block__car-img" src="/images/pages/home/img__main-screen-car.jpg")
+	.header-block__text-wrap
+		.header-block__text
+			h1.header-block__text-h1 Новый сервис Ленд Ровер на ТТК в Москве!
+			p.header-block__text-description 
+				| Гарантируем лучшее предложение по Москве!
+				br
+				| Звоните: +7(495) 241-29-39. Приезжайте:
+				br
+				| г. Москва, ул. Двинцев 3с6.
+	//- .header-block__style-print
+	//- 	svg(class="header-block__style-print-img" aria-hidden="true")
+	//- 		use(xlink:href="/images/common/sprite__icons.svg#pattern")
+
+	
+

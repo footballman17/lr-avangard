@@ -1,1 +1,61 @@
 .gifts
+    .gifts__content-wrap
+        h2.gifts__h2
+            | Подарки в честь знакомства!
+        p.gifts__desc-text
+            | Мы подготовили несколько вариантов, какой, вы выберете сами: *
+        .gifts__cards-wrap
+            .card-gift__border_full-opacity
+                p.card-gift__number__display_none
+                    | 01
+                ul.card-gift__ul-choose
+                    li.card-gift__ellipse
+                    li.card-gift__choose-text
+                        | выбрано
+                .card-gift__image-wrap
+                    svg(class="card-gift__image-oil" aria-hidden="true")
+                        use(xlink:href="/images/common/sprite__icons.svg#oil")
+                p.card-gift__desc-text
+                    | Моторное масло в подарок при проведении полного ТО
+            .card-gift
+                p.card-gift__number
+                    | 02
+                ul.card-gift__ul-choose__display_none
+                    li.card-gift__ellipse
+                    li.card-gift__choose-text
+                        | выбрано
+                .card-gift__image-wrap
+                    svg(class="card-gift__image-oil" aria-hidden="true")
+                        use(xlink:href="/images/common/sprite__icons.svg#gearbox")
+                p.card-gift__desc-text
+                    | Работа по замене масла в АКПП при покупке расходных материалов
+            .card-gift
+                p.card-gift__number
+                    | 03
+                ul.card-gift__ul-choose__display_none
+                    li.card-gift__ellipse
+                    li.card-gift__choose-text
+                        | выбрано
+                .card-gift__image-wrap
+                    svg(class="card-gift__image-oil" aria-hidden="true")
+                        use(xlink:href="/images/common/sprite__icons.svg#antifreeze")
+                p.card-gift__desc-text
+                    | 35% скидка на услугу мойки радиаторов
+        .gifts-form
+            .gifts-form__field__name
+                label(class="gifts-form__label" for="input-name")
+                    | ваше имя
+                input(class="gifts-form__input", id="input-name" type="text", maxlength="100", name="Имя", required="")
+            .gifts-form__field__phone
+                label(class="gifts-form__label" for="input-phone")
+                    | телефон
+                input(class="gifts-form__input", id="input-phone" placeholder="+7" type="text", maxlength="100", name="Имя", required="")
+            .gifts-form__button-wrap
+                button.gifts-form__button
+                    | Отправить
+        .gifts__star-text-wrap
+            p.gifts__star-text
+                | * подробные условия акции у мастеров-приемщиков
+        .gifts__style-print
+            svg(class="gifts__style-print-img" aria-hidden="true")
+                use(xlink:href="/images/common/sprite__icons.svg#pattern")

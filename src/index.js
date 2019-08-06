@@ -1,5 +1,6 @@
 import './scss/style.scss';
 import $ from 'jquery';
+import './script.js';
 
 import htmlHead from './pug/head.pug';
 import htmlBody from './pug/body.pug';

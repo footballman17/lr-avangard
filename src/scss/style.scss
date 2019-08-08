@@ -1,4 +1,7 @@
 // Reset
+@import 'includes/_functions';
+
+// Reset
 @import 'includes/_reset';
 
 // Font
@@ -7,27 +10,27 @@
 // Base
 @import 'includes/_base';
 
-// Grid Bootstrap
-$min-width-tablet: 520px;
-$min-width-desktop: 992px;
-$min-width-large-desktop: 1200px;
-
 // Mobile
-@media (max-width: $min-width-tablet - 1) {
+@media (max-width: 519px) {
 	@import 'includes/_mobile';
 }
 
 // Tablet
-@media (min-width: $min-width-tablet) {
+@media (min-width: 520px) and (max-width: 991px) {
 	@import 'includes/_tablet';
 }
 
 // Desktop
-@media (min-width: $min-width-desktop) {
+@media (min-width: 992px) and (max-width: 1199px) {
 	@import 'includes/_desktop';
 }
 
 // Large Desktop
-@media (min-width: $min-width-large-desktop) {
+@media (min-width: 1200px) {
 	@import 'includes/_large-desktop';
+}
+
+// Some Desktop
+@media (min-width: 1200px) and (max-width: 1249px) {
+	@import 'includes/_some-desktop';
 }

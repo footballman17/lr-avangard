@@ -277,7 +277,7 @@ body {
     max-width: 1290px;
     margin: 0 auto;
     position: relative;
-    background: url(../images/pages/home/img__gifts-bg.jpg) no-repeat;
+    background: url(/images/pages/home/img__gifts-bg.jpg) no-repeat;
     background-size: cover;
     background-position: top center;
     padding-bottom: 9.375rem;
@@ -646,7 +646,7 @@ body {
     width: calc(100% / 12 * 10 - 15px);
     margin: 0 auto;
     padding-bottom: 14.375rem;
-    background: url(../images/pages/home/img__action-bg.jpg), rgba(0, 0, 0, 0.6) top left no-repeat;
+    background: url(/images/pages/home/img__action-bg.jpg), rgba(0, 0, 0, 0.6) top left no-repeat;
     background-size: cover;
     background-blend-mode: overlay; }
   .action__header {
@@ -971,19 +971,19 @@ body {
   box-shadow: 0px 35px 50px 10px rgba(214, 0, 0, 0.2);
   z-index: 3; }
   .service__cards-wrap-item-image__service_01 {
-    background: url(../images/pages/home/img__about-service-01.jpg) top left no-repeat;
+    background: url(/images/pages/home/img__about-service-01.jpg) top left no-repeat;
     background-size: cover; }
   .service__cards-wrap-item-image__service_02 {
-    background: url(../images/pages/home/img__about-service-02.jpg) top left no-repeat;
+    background: url(/images/pages/home/img__about-service-02.jpg) top left no-repeat;
     background-size: cover; }
   .service__cards-wrap-item-image__service_03 {
-    background: url(../images/pages/home/img__about-service-03.jpg) top left no-repeat;
+    background: url(/images/pages/home/img__about-service-03.jpg) top left no-repeat;
     background-size: cover; }
   .service__cards-wrap-item-image__service_04 {
-    background: url(../images/pages/home/img__about-service-04.jpg) top left no-repeat;
+    background: url(/images/pages/home/img__about-service-04.jpg) top left no-repeat;
     background-size: cover; }
   .service__cards-wrap-item-image__service_05 {
-    background: url(../images/pages/home/img__about-service-05.jpg) top left no-repeat;
+    background: url(/images/pages/home/img__about-service-05.jpg) top left no-repeat;
     background-size: cover; }
 
 .service__card-form {
@@ -1289,7 +1289,7 @@ body {
 .modal {
   width: calc(100% / 12 * 11 - 15px);
   margin: 0 auto;
-  background: url(../images/common/img__modal-form-bg.jpg) top left no-repeat;
+  background: url(/images/common/img__modal-form-bg.jpg) top left no-repeat;
   background-size: cover;
   overflow: scroll;
   height: 700px; }

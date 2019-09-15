@@ -1,3 +1,5 @@
+- var adminEmail = "footballman170@yandex.ru";
+- var nameSite = "lr-avangard.ru";
 .about
     .about__max-width-wrap
         .about__content-wrap
@@ -28,7 +30,7 @@
                                 input(class="service__form-card-checkbox", id="checkbox-service-01" type="checkbox")
                                 p.service__form-text-checkbox
                                     | выбрать
-                            .service__white-background
+                            div(class="service__white-background service__white-background__visibility_hidden")
                         .service__form-card-label-wrap
                             p
                                 label(class="service__form-card-label" for="checkbox-service-01")
@@ -39,7 +41,7 @@
                                 input(class="service__form-card-checkbox", id="checkbox-service-02" type="checkbox")
                                 p.service__form-text-checkbox
                                     | выбрать
-                            .service__white-background
+                            div(class="service__white-background service__white-background__visibility_hidden")
                         .service__form-card-label-wrap
                             p
                                 label(class="service__form-card-label" for="checkbox-service-02")
@@ -80,32 +82,48 @@
             .service__form-wrap
                 .service__choose-list-wrap
                     p.service__cnt-serivices
-                        | Выбрано (2) услуги:
+                        | Выбрано (
+                        span.service__span-cnt-sevices
+                            | 2
+                        | ) услгуи:
                 .service__choose-list
-                    .service__choose-item-wrap
+                    div(class="service__choose-item-wrap" id="service_01")
                         p.service__choose-item-text
                             | Техническое обслуживание по пробегу
                         .service__choose-item-number-wrap
                             p.service__choose-item-number
                                 | 01
-                    .service__choose-item-wrap
+                    div(class="service__choose-item-wrap" id="service_02")
                         p.service__choose-item-text
                             | Ремонт электрического оборудования и систем
                         .service__choose-item-number-wrap
                             p.service__choose-item-number
                                 | 02
-                .service__form
+                form.service__form
+                    //- input(type='hidden', name='project_name', value='#{projectTitle}')
+                    input(type='hidden', name='admin_email', value=`${adminEmail}`)
+                    input(type='hidden', name='mail_subject', value=`Заявка с сайта "${nameSite}"`)
+                    // Hidden Advanced Fields
+                    //- input(class="modal__form-page", type="hidden", name="Страница", value="#{pageTitle}")
+                    input(class="modal__form-type", type="hidden", name="Форма", value="Форма - услуги")
+                    input(class="modal-form-service", type="hidden", name="Услуга", value="не задано")
+                    // Hidden Advanced Fields
+                    <input type="hidden" name="Канал трафика" value="" class="utm_medium">
+                    <input type="hidden" name="Источник трафика" value="" class="utm_source">
+                    <input type="hidden" name="Название кампании" value="" class="utm_campaign">
+                    <input type="hidden" name="Ключевое слово" value="" class="utm_term">
+                    <input type="hidden" name="Содержание кампании" value="" class="utm_content">
                     .gifts-form__sevice_true
                         .gifts-form__field__name__service_true
-                            label(class="gifts-form__label" for="input-name")
+                            label(class="gifts-form__label" for="input-name-sv")
                                 | ваше имя
-                            input(class="gifts-form__input", id="input-name" type="text", maxlength="100", name="Имя", required="")
+                            input(class="gifts-form__input", id="input-name-sv" type="text", maxlength="50", name="Имя", required)
                         .gifts-form__field__phone__service_true
-                            label(class="gifts-form__label" for="input-phone")
+                            label(class="gifts-form__label" for="input-phone-sv")
                                 | телефон
-                            input(class="gifts-form__input", id="input-phone" placeholder="+7" type="text", maxlength="100", name="Имя", required="")
+                            input(class="gifts-form__input", id="input-phone-sv" placeholder="+7" type="phone", maxlength="50", name="Телефон", required)
                         .gifts-form__button-wrap
-                            button.gifts-form__button__service_true
+                            button(class="gifts-form__button__service_true" type="submit")
                                 | Отправить
         //- .service__footer-img-wrap
         //-     img(class="service__footer-img" src="/images/pages/home/img__about-car.jpg")

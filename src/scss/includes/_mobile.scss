@@ -6,12 +6,14 @@
         font-size: get-em(12);
         padding-right: 5px;
     }
+
     &__text-wrap {
         padding-top: 20px;
     }
     &__logo-section {
         padding-top: get-rem(20);
         padding-bottom: get-rem(20);
+        justify-content: space-around;
     }
     &__text {
         width: calc(100% / 12 * 6 - 20px);
@@ -81,7 +83,7 @@
 
 .telephone {
     flex-basis: auto;
-    padding-left: 15px;
+    padding-left: 10px;
     &__link {
         font-size: get-em(10);
         line-height: 15px;
@@ -89,17 +91,18 @@
 }
 
 .menu {
-    flex-basis: auto;
-    &__text {
-        display: none;
-    }
-    &__icon {
-        width: 15px;
-        height: 15px;
-    }
-    &__span-text {
-        display: none;
-    }
+    display: none;
+    // flex-basis: auto;
+    // &__text {
+    //     display: none;
+    // }
+    // &__icon {
+    //     width: 15px;
+    //     height: 15px;
+    // }
+    // &__span-text {
+    //     display: none;
+    // }
 }
 
 .logo {
@@ -107,6 +110,7 @@
     img {
         width: 100px;
     }
+    padding-right: 10px;
 }
 
 .gifts {
@@ -187,7 +191,7 @@
 
 .personal-preview {
     &__name {
-        font-size: get-em(30);
+        font-size: get-em(22);
     }
     &__experience {
         font-size: get-rem(16);
@@ -201,7 +205,7 @@
 
     &__brief {
         position: absolute;
-        top: 90px;
+        top: 85px;
         left: 40px;
         width: 120px;
     }
@@ -211,6 +215,7 @@
     &__name-wrap {
         top: 10px;
         left: 150px;
+        width: auto;
     }
     &__hr {
         display: none;
@@ -327,10 +332,17 @@
         padding-top: get-rem(30);
     }
     &__row {
-        padding-bottom: 35px;
-        &__mobile-fix-padding {
-            padding-left: 30px;
-        }
+        justify-content: center;
+        padding-left: 0px;
+        padding-bottom: 80px;
+        // padding-bottom: 35px;
+        // &__mobile-fix-padding {
+        //     padding-left: 30px;
+        // }
+    }
+
+    &__void-block {
+        display: none;
     }
     &__img-block {
         display: none;
@@ -343,11 +355,12 @@
         font-size: get-em(11);
     }
     &__content-block {
-        padding-right: 5px;
+        padding-right: 15px;
+        padding-left: 25px;
     }
     &__text-block-item { 
         &__padding-left_none {
-            padding-left: 20px;
+            padding-left: 0px;
         }
     }
     &__h2-number-text-wrap {
@@ -432,6 +445,9 @@
     &__content-wrap {
         width: calc(100% / 12 * 11 + 10px);
     }
+    &__map {
+        height: 300px;
+    }
 }
 
 .footer {
@@ -448,6 +464,11 @@
     }
     &__content-text {
         font-size: 13px;
+    }
+    &__max-width-wrap {
+        &__policy_true {
+            padding-bottom: 50px;
+        }
     }
     &__h2 {
         padding-top: get-rem(80);
@@ -483,4 +504,28 @@
     &__form-wrap {
         padding-bottom: get-rem(100);
     }
+}
+
+.modal {
+    width: calc(100% - 10px);
+    &__h2 {
+        font-size: get-em(19);
+        line-height: 1.2em;
+        padding-bottom: get-rem(30);
+    }
+    &__fill-text {
+        font-size: get-em(12);
+    }
+    &__text-block {
+        padding-top: get-rem(50);
+    }
+    &__form {
+        padding-top: get-rem(30);
+        margin-left: 0;
+    }
+    &__content-wrap {
+        width: calc(100% - 20px);
+    }
+    height: 500px;
+    overflow: auto;
 }

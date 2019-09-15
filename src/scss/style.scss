@@ -34,3 +34,47 @@
 @media (min-width: 1200px) and (max-width: 1249px) {
 	@import 'includes/_some-desktop';
 }
+
+// Tablet
+@media (min-width: 520px) and (max-width: 787px) {
+
+.modal {
+    &__h2 {
+        font-size: get-em(24);
+        line-height: 1.2em;
+        padding-bottom: get-rem(30);
+    }
+    &__fill-text {
+        font-size: get-em(16);
+    }
+    &__text-block {
+        padding-top: get-rem(50);
+    }
+    &__form {
+        padding-top: get-rem(30);
+    }
+}
+}
+
+@media (min-width: 520px) and (max-width: 603px) {
+.personal-preview {
+    &__name-wrap {
+        position: absolute;
+        top: 15px;
+        left: 200px;
+        width: auto;
+	}
+    &__brief {
+        position: absolute;
+        top: 110px;
+        left: 80px;
+		width: 200px;
+	}
+    &__add-text-wrap {
+        position: absolute;
+        top: 290px;
+        left: -200px;
+        width: 290px;
+    }
+}
+}

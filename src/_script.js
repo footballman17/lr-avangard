@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 $(document).ready(function() {
   // выбор подарка
   $('.action__form-button').click(function() {
@@ -10,21 +8,20 @@ $(document).ready(function() {
     $('.modal-form-data').attr('value', 'Кнопка - оставить заявку - футер');
   });
 
+  $('.form-block__button').click(function() {
+    const dataForm = $('.form-block__input').val();
+    $('.modal-form-problem').attr('value', dataForm);
+  });
+
   $('.gifts-form__button__service_true').click(function() {
     const dataForm = $('.form-block__input').val();
     $('.modal-form-service').attr('value', JSON.stringify(arrServces));
   });
 
-  const curModalInfo = $(
-    '.card-gift__border_no-opacity .card-gift__desc-text'
-  ).text();
-  $('.modal-form-gifts').attr('value', curModalInfo);
   $('.card-gift').click(function() {
-    const curModalInfo = $('.card-gift__desc-text', this).text();
+    const curModalInfo = $('.card-gift .card-gift__desc-text').text();
 
     $('.modal-form-gifts').attr('value', curModalInfo);
-
-    console.log(curModalInfo);
 
     $('.card-gift').removeClass(
       'card-gift__border_no-opacity card-gift__number__display_none'
@@ -124,7 +121,7 @@ $(document).ready(function() {
     $('.personal-preview__add-text__first-feature').html(
       `${wokers[$idName][4]}<br>${wokers[$idName][5]}<br><br>`
     );
-    $('.personal-preview__add-text__second-feature').text(
+    $('.personal-preview__add-text__first-feature').text(
       `${wokers[$idName][6]} — ${wokers[$idName][7]}`
     );
 
@@ -150,7 +147,7 @@ $(document).ready(function() {
     setCurrentNumWorker(this.id);
 
     setRedBorder(this);
-    // console.log(currentNumWorker);
+    console.log(currentNumWorker);
   });
 
   // стрелки
@@ -165,7 +162,7 @@ $(document).ready(function() {
 
     const context = `#${currenWokersList[currentNumWorker]}`;
     setRedBorder($(context));
-    // console.log(currentNumWorker);
+    console.log(currentNumWorker);
   });
 
   $(
@@ -179,7 +176,7 @@ $(document).ready(function() {
 
     const context = `#${currenWokersList[currentNumWorker]}`;
     setRedBorder($(context));
-    // console.log(currentNumWorker);
+    console.log(currentNumWorker);
   });
 
   $('#checkbox-service-01').prop('checked', true);
@@ -192,9 +189,9 @@ $(document).ready(function() {
     arrServces = [];
     $('.service__choose-item-text').each(function() {
       arrServces.push($(this).text());
+      console.log(arrServces);
     });
   }
-  setArrServices();
 
   // услуги
   $('.service__form-card-checkbox').click(function() {
@@ -268,7 +265,7 @@ $(document).ready(function() {
     const allRequiredFields = $(this).find('input[required]');
     let flagEmpty = false;
     allRequiredFields.each(function(indx, element) {
-      if ($(element).val() == '') flagEmpty = true;
+      if ($(element).val() === '') flagEmpty = true;
     });
     if (flagEmpty) {
       alert('Заполните поля формы!');
@@ -277,24 +274,23 @@ $(document).ready(function() {
     // E-mail Ajax Send
 
     const th = $(this);
-    // console.log(decodeURI(th.serialize()));
+    console.log(th);
     $.ajax({
       type: 'POST',
       url: '/js/order.php',
       data: th.serialize(),
     }).done(function() {
       // Go to Thanks page
-      $(location).attr('href', '/thankyou.html');
+      // $(location).attr('href', '/thankyou.html');
       // Open Thanks window
-      // alert(
-      //   'Заявка успешно отправлена! В ближайшее время наш менеджер свяжется с Вами.'
-      // );
-      setTimeout(function() {
-        // Done Functions
-        $('.modal-wrapper').toggleClass(
-          'modal-wrapper__active modal-wrapper__inactive'
-        );
-      }, 1000);
+      alert(
+        'Заявка успешно отправлена! В ближайшее время наш менеджер свяжется с Вами.'
+      );
+      // setTimeout(function() {
+      //  // Done Functions
+      //  $('.modal-form').css('display', 'none');
+      //  th.trigger('reset');
+      // }, 1000);
     });
     return false;
   });

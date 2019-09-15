@@ -4,6 +4,8 @@ import './script.js';
 
 import htmlHead from './pug/head.pug';
 import htmlBody from './pug/body.pug';
+// import htmlBody from './pug/thankyou.pug';
+// import htmlBody from './pug/policy.pug';
 
 const head = $('head');
 const body = $('body');

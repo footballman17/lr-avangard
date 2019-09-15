@@ -1,3 +1,5 @@
+- var adminEmail = "footballman170@yandex.ru";
+- var nameSite = "lr-avangard.ru";
 .team
     .team__max-width-wrap
         .team__content-wrap
@@ -17,22 +19,28 @@
                 .team__hr__margin-top_none
             .team__preview
                 .team__preview-item
-                    .team__preview-circle__border_true
+                    div(class="team__preview-circle team__preview-circle__border_true" id="bondarec")
                         img(class="team__preview-photo-img" src="/images/pages/home/img__team-person-bondarec-preview.jpg")
                 .team__preview-item
-                    .team__preview-circle
+                    div(class="team__preview-circle" id="latipov")
                         img(class="team__preview-photo-img" src="/images/pages/home/img__team-person-latipov-preview.jpg")
                 .team__preview-item
-                    .team__preview-circle
+                    div(class="team__preview-circle" id="ponomarev")
                         img(class="team__preview-photo-img" src="/images/pages/home/img__team-person-ponomarev-preview.jpg")
                 .team__preview-item
-                    .team__preview-circle
+                    div(class="team__preview-circle" id="siromyatnikov")
                         img(class="team__preview-photo-img" src="/images/pages/home/img__team-person-siromyatnikov-preview.jpg")
                 .team__preview-item
-                    .team__preview-circle
-                        .team__preview-photo-img__photo_false
-                            p.team__preview-photo-text
-                                | 03
+                    div(class="team__preview-circle" id="sviderskiy")
+                        img(class="team__preview-photo-img" src="/images/pages/home/img__team-person-sviderskiy-preview.jpg")
+                .team__preview-item
+                    div(class="team__preview-circle" id="tenkov")
+                        img(class="team__preview-photo-img" src="/images/pages/home/img__team-person-tenkov-preview.jpg")
+                //- .team__preview-item
+                //-     .team__preview-circle
+                //-         .team__preview-photo-img__photo_false
+                //-             p.team__preview-photo-text
+                //-                 | 03
             .personal-preview
                 .personal-preview__fill-block
                 .personal-preview__img-wrap
@@ -54,19 +62,19 @@
                                 .personal-preview__arrow__position_left
                                 .personal-preview__arrow__position_right
                                 .personal-preview__arrow-svg-wrap__position_left
-                                    svg(class="personal-preview__arrow-svg" aria-hidden="true")
+                                    svg(class="personal-preview__arrow-svg__left_true" aria-hidden="true")
                                         use(xlink:href="/images/common/sprite__icons.svg#arrow-left")
                                 .personal-preview__arrow-svg-wrap__position_right
-                                    svg(class="personal-preview__arrow-svg" aria-hidden="true")
+                                    svg(class="personal-preview__arrow-svg__right_true" aria-hidden="true")
                                         use(xlink:href="/images/common/sprite__icons.svg#arrow-right")
                         .personal-preview__add-text-wrap
-                            p.personal-preview__add-text
+                            p.personal-preview__add-text__first-feature
                                 | Количество нормо-часов за прошлый год:
                                 br
                                 | 2619.
                                 br
                                 br
-                            p.personal-preview__add-text
+                            p.personal-preview__add-text__second-feature
                                 | Любимая модель Ленд Ровер — Range Rover 
                                 br
                                 | Sport 2 3.0SC 340hp.

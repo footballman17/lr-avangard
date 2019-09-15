@@ -1,3 +1,5 @@
+- var adminEmail = "footballman170@yandex.ru";
+- var nameSite = "lr-avangard.ru";
 .advantages
     .max-width-wrap
         .advantages__content-wrap
@@ -67,20 +69,32 @@
                     .advantages__text
                         | Мы придерживаемся адекватной ценовой политики и ежемесячно проводим выгодные акции на Техническое обслуживание и Ремонт. А кэшбек по программе лояльности LR-AVANGARD позволяет полностью оплачивать наши услуги бонусными баллами.
             .advantages__hr
-.form-block
+form.form-block
+    //- input(type='hidden', name='project_name', value='#{projectTitle}')
+    input(type='hidden', name='admin_email', value=`${adminEmail}`)
+    input(type='hidden', name='mail_subject', value=`Заявка с сайта "${nameSite}"`)
+    // Hidden Advanced Fields
+    //- input(class="modal__form-page", type="hidden", name="Страница", value="#{pageTitle}")
+    input(class="modal__form-type", type="hidden", name="Форма", value="Окно - заявка с коротким описанием проблемы")
+    // UTM fields
+    <input type="hidden" name="Канал трафика" value="" class="utm_medium">
+    <input type="hidden" name="Источник трафика" value="" class="utm_source">
+    <input type="hidden" name="Название кампании" value="" class="utm_campaign">
+    <input type="hidden" name="Ключевое слово" value="" class="utm_term">
+    <input type="hidden" name="Содержание кампании" value="" class="utm_content">
     .form-block__wrap
         .form-block__h2-wrap
             h2.form-block__h2
                 | Оставьте заявку с коротким описанием проблемы
         .form-block__field
-            label(class="form-block__label" for="input-name")
+            label(class="form-block__label" for="input-name-fb")
                 | ваше имя
-            input(class="form-block__input", id="input-name" type="text", maxlength="100", name="Имя", required="")
+            input(class="form-block__input", id="input-name-fb" type="text", maxlength="50", name="Имя", required)
 
         .form-block__field
-            label(class="form-block__label" for="input-phone")
+            label(class="form-block__label" for="input-phone-fb")
                 | телефон
-            input(class="form-block__input", id="input-phone" placeholder="+7" type="text", maxlength="20", name="Телефон", required="")
+            input(class="form-block__input", id="input-phone-fb" placeholder="+7" type="phone", maxlength="50", name="Телефон", required)
         
         .form-block__field__comment_true
             .form-block__comment-wrap
@@ -88,7 +102,7 @@
                     | ваши комментарии
                 textarea(class="form-block__input" id="input-comments"  maxlength="200" name="Комментарии", cols="10", rows="3")
                 .form-block__button-wrap
-                    button.form-block__button
+                    button(class="form-block__button" type="submit")
                          ul.card-gift__ul-choose
                             li.card-gift__ellipse
                             li.form-block__choose-text

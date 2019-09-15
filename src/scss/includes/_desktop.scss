@@ -64,9 +64,12 @@
 
     &__brief {
         position: absolute;
-        top: 10px;
-        left: 335px;
+        top: 80px;
+        left: 320px;
         width: 200px;
+    }
+    &__hr {
+        top: 308px;
     }
 }
 
@@ -115,4 +118,8 @@
         right: get-rem(-220);
         z-index: 0;
     }
+}
+
+.modal {
+    height: 700px;
 }

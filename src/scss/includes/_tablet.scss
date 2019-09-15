@@ -164,6 +164,7 @@
     &__name-wrap {
         top: 10px;
         left: 270px;
+        width: 290px;
     }
     &__hr {
         display: none;
@@ -367,7 +368,6 @@
 .about {
     &__h2 {
         font-size: get-em(24);
-
     }
     &__content-wrap {
         width: calc(100% / 12 * 11 - 15px);
@@ -386,3 +386,15 @@
         float: left;
     }
 }
+
+.modal {
+    &__h2 {
+        font-size: get-em(24);
+        line-height: 1.2em;
+    }
+    &__fill-text {
+        font-size: get-em(16);
+    }
+    height: 500px;
+}
+

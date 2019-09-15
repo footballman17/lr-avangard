@@ -16,6 +16,8 @@ head.prepend(htmlHead);
 body.children(':not(:last)').remove();
 body.prepend(htmlBody);
 
+alert('hello');
+
 if (module.hot) {
   module.hot.accept();
 }

@@ -1,0 +1,129 @@
+- var adminEmail = "footballman170@yandex.ru";
+- var nameSite = "lr-avangard.ru";
+.about
+    .about__max-width-wrap
+        .about__content-wrap
+            .about__bridge-img-wrap
+                img(class="about__bridge-img" src="/images/pages/home/img__about-bridge.jpg")
+            .about__main-content-wrap
+                h2.about__h2
+                    | LR-AVANGARD — сервис, где мы относимся к вашему авто, как к своему
+                .about__hr
+                .about__text-block
+                    .about__text-block-item__padding-left_none
+                        p.about__content-text__first-letter_stylish
+                            | Только обладая профессиональной компетенцией и понимая суть автомобилей Land Rover можно правильно и точно подходить к обслуживанию и ремонту этих автомобилей. В нашем деле мы опираемся на:
+                            br
+                            br
+                            | 01. Реальные сроки ремонта и точное ориентирование клиента по времени. У нас совсем нет времени «замораживать» ремонт.
+                    .about__text-block-item
+                        p.about__content-text__text_original
+                            | 02. Многолетний опыт заставил находить выход из самых сложных ситуаций. Если можно выполнить качественный ремонт без потери ресурса, а не замену в сборе - мы всегда предложим эту альтернативу.
+                .about__hr__margin-top_none
+            .service
+                h2.service__h2
+                    | Услуги
+                .service__cards-wrap
+                    .service__cards-wrap-item
+                        .service__cards-wrap-item-image__service_01
+                            form.service__card-form
+                                input(class="service__form-card-checkbox", id="checkbox-service-01" type="checkbox")
+                                p.service__form-text-checkbox
+                                    | выбрать
+                            div(class="service__white-background service__white-background__visibility_hidden")
+                        .service__form-card-label-wrap
+                            p
+                                label(class="service__form-card-label" for="checkbox-service-01")
+                                    | Техническое обслуживание по пробегу
+                    .service__cards-wrap-item
+                        .service__cards-wrap-item-image__service_02
+                            form.service__card-form
+                                input(class="service__form-card-checkbox", id="checkbox-service-02" type="checkbox")
+                                p.service__form-text-checkbox
+                                    | выбрать
+                            div(class="service__white-background service__white-background__visibility_hidden")
+                        .service__form-card-label-wrap
+                            p
+                                label(class="service__form-card-label" for="checkbox-service-02")
+                                    | Диагностика и ремонт подвески
+                    .service__cards-wrap-item
+                        .service__cards-wrap-item-image__service_03
+                            form.service__card-form
+                                input(class="service__form-card-checkbox", id="checkbox-service-03" type="checkbox")
+                                p.service__form-text-checkbox
+                                    | выбрать
+                            .service__white-background
+                        .service__form-card-label-wrap
+                            p
+                                label(class="service__form-card-label" for="checkbox-service-03")
+                                    | Диагностика и ремонт силового агрегата
+                    .service__cards-wrap-item
+                        .service__cards-wrap-item-image__service_04
+                            form.service__card-form
+                                input(class="service__form-card-checkbox", id="checkbox-service-04" type="checkbox")
+                                p.service__form-text-checkbox
+                                    | выбрать
+                            .service__white-background
+                        .service__form-card-label-wrap
+                            p
+                                label(class="service__form-card-label" for="checkbox-service-04")
+                                    | Ремонт электрического оборудования и систем
+                    .service__cards-wrap-item
+                        .service__cards-wrap-item-image__service_05
+                            form.service__card-form
+                                input(class="service__form-card-checkbox", id="checkbox-service-05" type="checkbox")
+                                p.service__form-text-checkbox
+                                    | выбрать
+                            .service__white-background
+                        .service__form-card-label-wrap
+                            p
+                                label(class="service__form-card-label" for="checkbox-service-05")
+                                    | Установка ДОПов
+            .service__form-wrap
+                .service__choose-list-wrap
+                    p.service__cnt-serivices
+                        | Выбрано (
+                        span.service__span-cnt-sevices
+                            | 2
+                        | ) услгуи:
+                .service__choose-list
+                    div(class="service__choose-item-wrap" id="service_01")
+                        p.service__choose-item-text
+                            | Техническое обслуживание по пробегу
+                        .service__choose-item-number-wrap
+                            p.service__choose-item-number
+                                | 01
+                    div(class="service__choose-item-wrap" id="service_02")
+                        p.service__choose-item-text
+                            | Ремонт электрического оборудования и систем
+                        .service__choose-item-number-wrap
+                            p.service__choose-item-number
+                                | 02
+                form.service__form
+                    //- input(type='hidden', name='project_name', value='#{projectTitle}')
+                    input(type='hidden', name='admin_email', value=`${adminEmail}`)
+                    input(type='hidden', name='mail_subject', value=`Заявка с сайта "${nameSite}"`)
+                    // Hidden Advanced Fields
+                    //- input(class="modal__form-page", type="hidden", name="Страница", value="#{pageTitle}")
+                    input(class="modal__form-type", type="hidden", name="Форма", value="Форма - услуги")
+                    input(class="modal-form-service", type="hidden", name="Услуга", value="не задано")
+                    // Hidden Advanced Fields
+                    <input type="hidden" name="Канал трафика" value="" class="utm_medium">
+                    <input type="hidden" name="Источник трафика" value="" class="utm_source">
+                    <input type="hidden" name="Название кампании" value="" class="utm_campaign">
+                    <input type="hidden" name="Ключевое слово" value="" class="utm_term">
+                    <input type="hidden" name="Содержание кампании" value="" class="utm_content">
+                    .gifts-form__sevice_true
+                        .gifts-form__field__name__service_true
+                            label(class="gifts-form__label" for="input-name-sv")
+                                | ваше имя
+                            input(class="gifts-form__input", id="input-name-sv" type="text", maxlength="50", name="Имя", required)
+                        .gifts-form__field__phone__service_true
+                            label(class="gifts-form__label" for="input-phone-sv")
+                                | телефон
+                            input(class="gifts-form__input", id="input-phone-sv" placeholder="+7" type="phone", maxlength="50", name="Телефон", required)
+                        .gifts-form__button-wrap
+                            button(class="gifts-form__button__service_true" type="submit")
+                                | Отправить
+        //- .service__footer-img-wrap
+        //-     img(class="service__footer-img" src="/images/pages/home/img__about-car.jpg")

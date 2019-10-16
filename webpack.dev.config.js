@@ -111,6 +111,16 @@ module.exports = {
         },
       },
       {
+        test: /\.json$/,
+        loader: 'file-loader',
+        type: 'javascript/auto',
+        options: {
+          name() {
+            return '[path][name].[ext]';
+          },
+        },
+      },
+      {
         test: /\.html$/,
         include: [path.resolve(__dirname, 'src/')],
         use: ['html-loader'],

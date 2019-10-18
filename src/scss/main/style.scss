@@ -2,79 +2,44 @@
 @import 'includes/_functions';
 
 // Reset
-@import 'includes/_reset';
+@import '../common/_reset.scss';
 
 // Font
-@import 'includes/_font';
+@import 'includes/_font.scss';
 
 // Base
 @import 'includes/_base';
 
 // Mobile
 @media (max-width: 519px) {
-	@import 'includes/_mobile';
+  @import 'includes/_mobile';
 }
 
 // Tablet
 @media (min-width: 520px) and (max-width: 991px) {
-	@import 'includes/_tablet';
+  @import 'includes/_tablet';
 }
 
 // Desktop
 @media (min-width: 992px) and (max-width: 1199px) {
-	@import 'includes/_desktop';
+  @import 'includes/_desktop';
 }
 
 // Large Desktop
 @media (min-width: 1200px) {
-	@import 'includes/_large-desktop';
+  @import 'includes/_large-desktop';
 }
 
 // Some Desktop
 @media (min-width: 1200px) and (max-width: 1249px) {
-	@import 'includes/_some-desktop';
+  @import 'includes/_some-desktop';
 }
 
 // Tablet
 @media (min-width: 520px) and (max-width: 787px) {
-
-.modal {
-    &__h2 {
-        font-size: get-em(24);
-        line-height: 1.2em;
-        padding-bottom: get-rem(30);
-    }
-    &__fill-text {
-        font-size: get-em(16);
-    }
-    &__text-block {
-        padding-top: get-rem(50);
-    }
-    &__form {
-        padding-top: get-rem(30);
-    }
-}
+  @import 'includes/_special-520-787';
 }
 
 @media (min-width: 520px) and (max-width: 603px) {
-.personal-preview {
-    &__name-wrap {
-        position: absolute;
-        top: 15px;
-        left: 200px;
-        width: auto;
-	}
-    &__brief {
-        position: absolute;
-        top: 110px;
-        left: 80px;
-		width: 200px;
-	}
-    &__add-text-wrap {
-        position: absolute;
-        top: 290px;
-        left: -200px;
-        width: 290px;
-    }
-}
+  @import 'includes/_special-520-603';
 }

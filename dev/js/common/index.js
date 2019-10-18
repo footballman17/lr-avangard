@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "./";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('HELLO FROM Landrover!');\n\n\n//# sourceURL=webpack:///./js/common.js?");
+eval("console.log('HELLO FROM Landrover!');\n\n//# sourceURL=webpack:///./js/common.js?");
 
 /***/ })
 

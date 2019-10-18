@@ -36,15 +36,25 @@
     "html-webpack-plugin": "^3.2.0",
     "husky": "^3.0.9",
     "json-loader": "^0.5.7",
+    "lint-staged": "^9.4.2",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
-    "prettier": "^1.16.4",
+    "prettier": "^1.18.2",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "stylelint": "^11.1.1",
+    "stylelint-at-rule-no-children": "^0.3.1",
+    "stylelint-config-prettier": "^6.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.1.0",
+    "stylelint-media-use-custom-media": "^1.0.0",
+    "stylelint-order": "^3.1.1",
+    "stylelint-value-no-unknown-custom-properties": "^2.0.0",
+    "url-loader": "^2.2.0",
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
@@ -54,8 +64,10 @@
     "hot": "webpack-dev-server --open",
     "build": "webpack --mode production",
     "dev-detail": "webpack --mode development --profile",
-    "lint:css": "stylelint \"source/**/*.css\" --config ./.stylelintrc-format",
-    "format:css": "prettier --write \"source/**/*.css\" && stylelint \"source/**/*.css\" --fix --config ./.stylelintrc-format"
+    "lint:css": "stylelint \"src/**/*.css\" --config ./.stylelintrc-format",
+    "lint:scss": "stylelint \"src/**/*.scss\" --config ./.stylelintrc-format",
+    "format:css": "prettier --write \"src/**/*.css\" && stylelint \"src/**/*.css\" --fix --config ./.stylelintrc-format",
+    "format:scss": "prettier --write \"src/**/*.scss\" && stylelint \"src/**/*.scss\" --fix --config ./.stylelintrc-format"
   },
   "eslintConfig": {
     "extends": [
@@ -63,5 +75,21 @@
     ]
   },
   "author": "Valery Churbanov",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": [
+    "ie >= 8",
+    "last 4 version"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.scss": [
+      "prettier --write",
+      "stylelint --fix --config ./.stylelintrc-format",
+      "git add"
+    ]
+  }
 }

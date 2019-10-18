@@ -1,49 +1,49 @@
 - var adminEmail = "footballman170@yandex.ru";
 - var nameSite = "lr-avangard.ru";
 div(class="modal-wrapper modal-wrapper__inactive")
-    .modal-wrap
-        div(class="modal")
-            .modal__content-wrap
-                .modal__flex-wrap
-                    .modal__text-block
-                        h2.modal__h2
-                            | Оставьте заявку
-                        p.modal__fill-text
-                            | Заполните форму. Наш менеджер свяжется с вами в ближайшее время.
-                    form.modal__form
-                        // Hidden Required Fields
-                        //- input(type='hidden', name='project_name', value='#{projectTitle}')
-                        input(type='hidden', name='admin_email', value=`${adminEmail}`)
-                        input(type='hidden', name='mail_subject', value=`Заявка с сайта "${nameSite}"`)
-                        // Hidden Advanced Fields
-                        //- input(class="modal__form-page", type="hidden", name="Страница", value="#{pageTitle}")
-                        input(class="modal__form-type", type="hidden", name="Форма", value="Модальное окно")
-                        input(class="modal-form-data", type="hidden", name="Услуга", value="")
-                        // UTM fields
-                        <input type="hidden" name="Канал трафика" value="" class="utm_medium">
-                        <input type="hidden" name="Источник трафика" value="" class="utm_source">
-                        <input type="hidden" name="Название кампании" value="" class="utm_campaign">
-                        <input type="hidden" name="Ключевое слово" value="" class="utm_term">
-                        <input type="hidden" name="Содержание кампании" value="" class="utm_content">
-                        .modal__form__field__name
-                            label(class="modal__form__label" for="input-name-mpd")
-                                | ваше имя
-                            input(class="modal__form__input", id="input-name-mod" type="text", maxlength="50", name="Имя", required)
-                        .modal__form__field__phone
-                            label(class="modal__form__label" for="input-phone-mod")
-                                | телефон
-                            input(class="modal__form__input", id="input-phone-mod" placeholder="+7" type="phone", maxlength="50", name="Телефон", required)
-                        .modal__form__button-wrap
-                            button(class="modal__form__button" type="submit")
-                                | Отправить
-                            .modal__form__hr-block
-                            .modal__form__hr-block__position_right
-                            .modal__form__or-text-block-wrap
-                                p.modal__form__or-text-block
-                                    | или
-                            .modal__form__close-icon
-                                svg(class="modal__form__close-icon-img" aria-hidden="true")
-                                    use(xlink:href="/images/common/sprite__icons.svg#close")
-                            .modal__form__close-text-wrap
-                                p.modal__form__close-text
-                                    | Закрыть окно
+  .modal-wrap
+    div(class="modal")
+      .modal__content-wrap
+        .modal__flex-wrap
+          .modal__text-block
+            h2.modal__h2
+              | Оставьте заявку
+            p.modal__fill-text
+              | Заполните форму. Наш менеджер свяжется с вами в ближайшее время.
+          form.modal__form
+            // Hidden Required Fields
+            //- input(type='hidden', name='project_name', value='#{projectTitle}')
+            input(type='hidden', name='admin_email', value=`${adminEmail}`)
+            input(type='hidden', name='mail_subject', value=`Заявка с сайта "${nameSite}"`)
+            // Hidden Advanced Fields
+            //- input(class="modal__form-page", type="hidden", name="Страница", value="#{pageTitle}")
+            input(class="modal__form-type", type="hidden", name="Форма", value="Модальное окно")
+            input(class="modal-form-data", type="hidden", name="Услуга", value="")
+            // UTM fields
+            <input type="hidden" name="Канал трафика" value="" class="utm_medium">
+            <input type="hidden" name="Источник трафика" value="" class="utm_source">
+            <input type="hidden" name="Название кампании" value="" class="utm_campaign">
+            <input type="hidden" name="Ключевое слово" value="" class="utm_term">
+            <input type="hidden" name="Содержание кампании" value="" class="utm_content">
+            .modal__form__field__name
+              label(class="modal__form__label" for="input-name-mpd")
+                | ваше имя
+              input(class="modal__form__input", id="input-name-mod" type="text", maxlength="50", name="Имя", required)
+            .modal__form__field__phone
+              label(class="modal__form__label" for="input-phone-mod")
+                | телефон
+              input(class="modal__form__input", id="input-phone-mod" placeholder="+7" type="phone", maxlength="50", name="Телефон", required)
+            .modal__form__button-wrap
+              button(class="modal__form__button" type="submit")
+                | Отправить
+              .modal__form__hr-block
+              .modal__form__hr-block__position_right
+              .modal__form__or-text-block-wrap
+                p.modal__form__or-text-block
+                  | или
+              .modal__form__close-icon
+                svg(class="modal__form__close-icon-img" aria-hidden="true")
+                  use(xlink:href=require("../../../assets/images/common/sprite__icons.svg") + "#close")
+              .modal__form__close-text-wrap
+                p.modal__form__close-text
+                  | Закрыть окно

@@ -1,23 +1,23 @@
 - var adminEmail = "footballman170@yandex.ru";
 - var nameSite = "lr-avangard.ru";
 .contacts
-    .contacts__max-width-wrap
-        //- .contacts__style-print
-        //-     svg(class="contacts__style-print-img" aria-hidden="true")
-        //-         use(xlink:href="/images/common/sprite__icons.svg#pattern")
-        .contacts__content-wrap
-            .contacts__card
-                h2.contacts__h2
-                    | Контакты
-                address
-                    p.contacts__address-text
-                        | Москва, ул. Двинцев 3с6
-                    p.contacts__address-text
-                        a(class="contacts__address-link"  href="tel:+74952412939")
-                            | +7(495)241-29-39
-                    p.contacts__address-text
-                        | info@lr-avangard.ru
-                .contacts__form
-                    <button class="contacts__form-button"><ul class="card-gift__ul-choose"><li class="card-gift__ellipse"></li><li class="contacts__choose-text">Оставить заявку</li></ul></button>
-            div(class="contacts__map" id="contactsMap")
-                
+  .contacts__max-width-wrap
+    //- .contacts__style-print
+    //-     svg(class="contacts__style-print-img" aria-hidden="true")
+    //-         use(xlink:href=require("../../../assets/images/common/sprite__icons.svg") + "#pattern")
+    .contacts__content-wrap
+      .contacts__card
+        h2.contacts__h2
+          | Контакты
+        address
+          p.contacts__address-text
+            | Москва, ул. Двинцев 3с6
+          p.contacts__address-text
+            a(class="contacts__address-link"  href="tel:+74952412939")
+              | +7(495)241-29-39
+          p.contacts__address-text
+            | info@lr-avangard.ru
+        .contacts__form
+          <button class="contacts__form-button"><ul class="card-gift__ul-choose"><li class="card-gift__ellipse"></li><li class="contacts__choose-text">Оставить заявку</li></ul></button>
+      div(class="contacts__map" id="contactsMap")
+

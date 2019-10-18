@@ -18,7 +18,7 @@ module.exports = {
     rules: [
       {
         test: /\.m?js$/,
-        include: [path.resolve(__dirname, 'source/')],
+        include: [path.resolve(__dirname, 'src/')],
         use: {
           loader: 'babel-loader',
           options: {
@@ -39,11 +39,21 @@ module.exports = {
         use: ['pug-loader'],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|woff|woff2|ttf|otf|svg|xml)$/i,
         loader: 'file-loader',
         options: {
-          name(file) {
-            return '[path][name].[contenthash].[ext]?';
+          name() {
+            return '[path][name].[contenthash].[ext]';
+          },
+        },
+      },
+      {
+        test: /\.json$/,
+        loader: 'file-loader',
+        type: 'javascript/auto',
+        options: {
+          name() {
+            return '[path][name].[ext]';
           },
         },
       },

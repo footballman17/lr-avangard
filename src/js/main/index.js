@@ -1,23 +1,9 @@
 import '../../scss/main/style.scss';
+import '../../assets/images/favicons/android-chrome-192x192.png';
+import '../../assets/images/favicons/android-chrome-512x512.png';
 
 const $ = require('jquery');
 // import '../script.js';
-
-// const $ = require('jquery');
-// import htmlHead from './pug/head.pug';
-// import htmlBody from './pug/body.pug';
-// import htmlBody from './pug/thankyou.pug';
-// import htmlBody from './pug/policy.pug';
-// const head = $('head');
-// const body = $('body');
-// head.children(':not(style)').remove();
-// head.prepend(htmlHead);
-// body.children(':not(:last)').remove();
-// body.prepend(htmlBody);
-// alert('hello');
-// if (module.hot) {
-//   module.hot.accept();
-// }
 
 $(document).ready(function() {
   let arrServces = [];
@@ -151,7 +137,7 @@ $(document).ready(function() {
     // меняем фото
     $('.personal-preview__img-wrap > img').attr(
       'src',
-      `/images/pages/home/img__team-person-${$idName}.jpg`
+      `/assets/images/pages/home/img__team-person-${$idName}.jpg`
     );
   }
 

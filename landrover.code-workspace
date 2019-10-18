@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "D:\\projects\\web-projects\\2019\\webpack3-screencast-hmr"
 		}
 	],
 	"settings": {}

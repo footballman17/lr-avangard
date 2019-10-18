@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
 
@@ -29,14 +29,14 @@ module.exports = {
     path: path.resolve(__dirname, 'dev'),
     filename: 'js/[name]/index.js',
     // интернет-путь
-    publicPath: './',
+    publicPath: '/',
   },
 
   module: {
     rules: [
       {
         test: /\.m?js$/,
-        include: [path.resolve(__dirname, 'source/')],
+        include: [path.resolve(__dirname, 'src/')],
         use: {
           loader: 'babel-loader',
           options: {
@@ -86,7 +86,7 @@ module.exports = {
           },
           {
             loader: 'sass-loader',
-            options: { sourceMap: true },
+            options: {sourceMap: true},
           },
         ],
       },
@@ -102,7 +102,17 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|woff?2|ttf|svg|xml)$/i,
+        test: /\.(png|jpe?g|gif|woff|woff2|ttf|otf|svg|xml)$/i,
+        exclude: /(android-chrome-192x192.png)|(android-chrome-512x512.png)/i,
+        loader: 'file-loader',
+        options: {
+          name() {
+            return '[path][name].[contenthash:6].[ext]';
+          },
+        },
+      },
+      {
+        test: /(android-chrome-192x192.png)|(android-chrome-512x512.png)/i,
         loader: 'file-loader',
         options: {
           name() {
@@ -116,7 +126,7 @@ module.exports = {
         type: 'javascript/auto',
         options: {
           name() {
-            return '[path][name].[ext]';
+            return '[path][name].[contenthash:6].[ext]';
           },
         },
       },
@@ -133,6 +143,7 @@ module.exports = {
       filename: 'css/[name]/style.css',
     }),
     new CleanWebpackPlugin(),
+    // new SpriteLoaderPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       chunks: ['common', 'main'],

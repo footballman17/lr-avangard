@@ -1,7 +1,7 @@
 @function get-rem($px) {
-  @return ($px/16)+rem;
+  @return ($px/16) + rem;
 }
 
 @function get-em($px) {
-  @return ($px/16)+em;
+  @return ($px/16) + em;
 }

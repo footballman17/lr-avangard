@@ -40,10 +40,20 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|woff|woff2|ttf|otf|svg|xml)$/i,
+        exclude: /(android-chrome-192x192.png)|(android-chrome-512x512.png)/i,
         loader: 'file-loader',
         options: {
           name() {
-            return '[path][name].[contenthash].[ext]';
+            return '[path][name].[contenthash:6].[ext]';
+          },
+        },
+      },
+      {
+        test: /(android-chrome-192x192.png)|(android-chrome-512x512.png)/i,
+        loader: 'file-loader',
+        options: {
+          name() {
+            return '[path][name].[ext]';
           },
         },
       },
@@ -53,13 +63,13 @@ module.exports = {
         type: 'javascript/auto',
         options: {
           name() {
-            return '[path][name].[ext]';
+            return '[path][name].[contenthash:6].[ext]';
           },
         },
       },
       {
         test: /\.html$/,
-        include: [path.resolve(__dirname, 'source/')],
+        include: [path.resolve(__dirname, 'src/')],
         use: ['html-loader'],
       },
     ],

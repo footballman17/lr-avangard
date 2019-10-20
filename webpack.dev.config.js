@@ -143,7 +143,6 @@ module.exports = {
       filename: 'css/[name]/style.css',
     }),
     new CleanWebpackPlugin(),
-    // new SpriteLoaderPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       chunks: ['common', 'main'],

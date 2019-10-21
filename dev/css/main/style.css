@@ -542,6 +542,8 @@ body {
 .team {
   width: 100%;
   background: #e6e6e6; }
+  .team__photos {
+    display: none; }
   .team__max-width-wrap {
     position: relative;
     margin: 0 auto;

@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
+const AssetsPlugin = require('assets-webpack-plugin');
 
 module.exports = {
   optimization: {
@@ -143,6 +144,17 @@ module.exports = {
       filename: 'css/[name]/style.css',
     }),
     new CleanWebpackPlugin(),
+    new AssetsPlugin({
+      filename: 'assets.json',
+      path: path.resolve(__dirname, 'dev/js'),
+      prettyPrint: true,
+      processOutput(assets) {
+        console.log('************************');
+        console.log(assets);
+        console.log('************************');
+        return `window.staticMap = ${JSON.stringify(assets)}`;
+      },
+    }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       chunks: ['common', 'main'],

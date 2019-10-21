@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "autoprefixer": "^9.6.1",
+    "assets-webpack-plugin": "^3.9.10",
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
     "path": "^0.12.7",

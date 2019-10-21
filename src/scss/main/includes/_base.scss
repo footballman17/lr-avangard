@@ -492,6 +492,10 @@ body {
   width: 100%;
   background: #e6e6e6;
 
+  &__photos {
+    display: none;
+  }
+
   &__max-width-wrap {
     position: relative;
     margin: 0 auto;

@@ -16,11 +16,19 @@ const TeamSlider = {
   // { bondarec: "/assets/images/pages/home/img__team-person-bondarec.d0a396.jpg"}
   srcImagesList: {},
 
-  // инициализация srcImagesList, maximumNumWorker
+  // инициализировать srcImagesList, maximumNumWorker
   initSrcImagesList() {
+    console.log('----');
+
+    const test = $('.team__photos img');
+
+    console.log(test);
+
     let listImagesSrc = $('.team__photos img').map(function(indx, element) {
       return $(element).attr('src');
     });
+
+    // console.log(listImagesSrc);
 
     listImagesSrc = listImagesSrc.get();
 
@@ -36,11 +44,14 @@ const TeamSlider = {
 
   // инициалзировать слайд - основная фунцкция (export)
   initSlider() {
+    TeamSlider.initSrcImagesList();
     // инициализировать переключение слайдера при нажатии на превью картинок
     $('.team__preview-circle').click(function() {
       TeamSlider.changePersonalInfo(this.id);
       TeamSlider.setCurrentNumWorker(this.id);
       TeamSlider.setRedBorder(this);
+
+      console.log(TeamSlider.srcImagesList);
     });
 
     // инициализировать обработку кнопок со стрелками
@@ -115,7 +126,6 @@ const TeamSlider = {
 };
 
 // инициализация srcImagesList, maximumNumWorker
-TeamSlider.initSrcImagesList();
 
 const initTeamSlider = TeamSlider.initSlider;
 export {initTeamSlider};

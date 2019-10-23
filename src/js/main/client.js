@@ -1,17 +1,22 @@
-import initHandleGiftsLayer from './units/gifts.js';
+import initGiftsLayerHandle from './units/gifts.js';
 import initModalWindow from './units/modal.js';
 import {initTeamSlider} from './units/teamSlider.js';
+import {initServicesLayerHandle} from './units/services.js';
 
 const $ = require('jquery');
 
 $(document).ready(function() {
-  initHandleGiftsLayer();
-
   // инициализировать работу модального окна
   initModalWindow();
 
-  // инициализировать работу слайдера
+  // инициализировать работу слоя "Подарки"
+  initGiftsLayerHandle();
+
+  // инициализировать работу слайдера - слой "Команда"
   initTeamSlider();
+
+  // иницилизировать работу слоя "Услуги"
+  initServicesLayerHandle();
 
   // let arrServces = [];
   // // выбор подарка

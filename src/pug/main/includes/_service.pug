@@ -26,58 +26,68 @@
         .service__cards-wrap
           .service__cards-wrap-item
             .service__cards-wrap-item-image__service_01
-              form.service__card-form
-                input(class="service__form-card-checkbox", id="checkbox-service-01" type="checkbox")
-                p.service__form-text-checkbox
-                  | выбрать
+              form(id="service__card-form-01", class="service__card-form")
+                label
+                  input(class="service__form-card-checkbox", id="checkbox-service-input-01" type="checkbox" checked)
+                  span.service__form-text-checkbox-span
+                    p.service__form-text-checkbox
+                      | выбрано
               div(class="service__white-background service__white-background__visibility_hidden")
             .service__form-card-label-wrap
               p
-                label(class="service__form-card-label" for="checkbox-service-01")
+                label(class="service__form-card-label" for="checkbox-service-input-01")
                   | Техническое обслуживание по пробегу
           .service__cards-wrap-item
             .service__cards-wrap-item-image__service_02
-              form.service__card-form
-                input(class="service__form-card-checkbox", id="checkbox-service-02" type="checkbox")
-                p.service__form-text-checkbox
-                  | выбрать
+              form(id="service__card-form-02", class="service__card-form")
+                label
+                  input(class="service__form-card-checkbox", id="checkbox-service-input-02" type="checkbox" checked)
+                  span.service__form-text-checkbox-span
+                    p.service__form-text-checkbox
+                      | выбрано
               div(class="service__white-background service__white-background__visibility_hidden")
             .service__form-card-label-wrap
               p
-                label(class="service__form-card-label" for="checkbox-service-02")
+                label(class="service__form-card-label" for="checkbox-service-input-02")
                   | Диагностика и ремонт подвески
           .service__cards-wrap-item
             .service__cards-wrap-item-image__service_03
-              form.service__card-form
-                input(class="service__form-card-checkbox", id="checkbox-service-03" type="checkbox")
-                p.service__form-text-checkbox
-                  | выбрать
+              form(id="service__card-form-03", class="service__card-form")
+                label
+                  input(class="service__form-card-checkbox", id="checkbox-service-input-03" type="checkbox")
+                  span.service__form-text-checkbox-span
+                    p.service__form-text-checkbox
+                      | выбрано
               .service__white-background
             .service__form-card-label-wrap
               p
-                label(class="service__form-card-label" for="checkbox-service-03")
+                label(class="service__form-card-label" for="checkbox-service-input-03")
                   | Диагностика и ремонт силового агрегата
           .service__cards-wrap-item
             .service__cards-wrap-item-image__service_04
-              form.service__card-form
-                input(class="service__form-card-checkbox", id="checkbox-service-04" type="checkbox")
-                p.service__form-text-checkbox
-                  | выбрать
+              form(id="service__card-form-04", class="service__card-form")
+                label
+                  input(class="service__form-card-checkbox", id="checkbox-service-input-04" type="checkbox")
+                  span.service__form-text-checkbox-span
+                    p.service__form-text-checkbox
+                      | выбрано
               .service__white-background
             .service__form-card-label-wrap
               p
-                label(class="service__form-card-label" for="checkbox-service-04")
+                label(class="service__form-card-label" for="checkbox-service-input-04")
                   | Ремонт электрического оборудования и систем
           .service__cards-wrap-item
             .service__cards-wrap-item-image__service_05
-              form.service__card-form
-                input(class="service__form-card-checkbox", id="checkbox-service-05" type="checkbox")
-                p.service__form-text-checkbox
-                  | выбрать
+              form(id="service__card-form-05", class="service__card-form")
+                label
+                  input(class="service__form-card-checkbox", id="checkbox-service-input-05" type="checkbox")
+                  span.service__form-text-checkbox-span
+                    p.service__form-text-checkbox
+                      | выбрано
               .service__white-background
             .service__form-card-label-wrap
               p
-                label(class="service__form-card-label" for="checkbox-service-05")
+                label(class="service__form-card-label" for="checkbox-service-input-05")
                   | Установка ДОПов
       .service__form-wrap
         .service__choose-list-wrap
@@ -95,7 +105,7 @@
                 | 01
           div(class="service__choose-item-wrap" id="service_02")
             p.service__choose-item-text
-              | Ремонт электрического оборудования и систем
+              | Диагностика и ремонт подвески
             .service__choose-item-number-wrap
               p.service__choose-item-number
                 | 02

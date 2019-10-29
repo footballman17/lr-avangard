@@ -2,6 +2,7 @@ import initGiftsLayerHandle from './units/gifts.js';
 import initModalWindow from './units/modal.js';
 import {initTeamSlider} from './units/teamSlider.js';
 import {initServicesLayerHandle} from './units/services.js';
+import utmHandle from './units/utm.js';
 
 const $ = require('jquery');
 
@@ -17,6 +18,9 @@ $(document).ready(function() {
 
   // иницилизировать работу слоя "Услуги"
   initServicesLayerHandle();
+
+  // иницилизировать utm-метки
+  utmHandle();
 
   // let arrServces = [];
   // // выбор подарка

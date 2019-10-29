@@ -71,6 +71,7 @@ const servicesHandleObject = {
     checkBoxElement.removeAttr('checked');
   },
 
+  // обновить количество выбранных сервис-услуг
   updateCntCheckedServices() {
     $('.service__choose-list .service__choose-item-number').each(function(
       indx,

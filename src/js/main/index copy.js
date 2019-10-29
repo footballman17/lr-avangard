@@ -282,30 +282,6 @@ $(document).ready(function() {
   //     alert('Заполните поля формы!');
   //     return false;
   //   }
-  // E-mail Ajax Send
-
-  //   const th = $(this);
-  //   // console.log(decodeURI(th.serialize()));
-  //   $.ajax({
-  //     type: 'POST',
-  //     url: '/js/order.php',
-  //     data: th.serialize(),
-  //   }).done(function() {
-  //     // Go to Thanks page
-  //     $(location).attr('href', '/thankyou.html');
-  //     // Open Thanks window
-  //     // alert(
-  //     //   'Заявка успешно отправлена! В ближайшее время наш менеджер свяжется с Вами.'
-  //     // );
-  //     setTimeout(function() {
-  //       // Done Functions
-  //       $('.modal-wrapper').toggleClass(
-  //         'modal-wrapper__active modal-wrapper__inactive'
-  //       );
-  //     }, 1000);
-  //   });
-  //   return false;
-  // });
 
   // Get UTM function
   // function getUTM(name) {

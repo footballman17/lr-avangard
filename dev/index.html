@@ -55,11 +55,12 @@
             <!-- Hidden Advanced Fields-->
             <input class="modal__form-type" type="hidden" name="Форма" value="Модальное окно">
             <input class="modal-form-data" type="hidden" name="Услуга" value="">
-            <!-- UTM fields--><input type="hidden" name="Канал трафика" value="" class="utm_medium">
-<input type="hidden" name="Источник трафика" value="" class="utm_source">
-<input type="hidden" name="Название кампании" value="" class="utm_campaign">
-<input type="hidden" name="Ключевое слово" value="" class="utm_term">
-<input type="hidden" name="Содержание кампании" value="" class="utm_content">
+            <!-- UTM fields-->
+            <input class="utm_medium" type="hidden" name="Канал трафика" value="">
+            <input class="utm_source" type="hidden" name="Источник трафика" value="">
+            <input class="utm_campaign" type="hidden" name="Название кампании" value="">
+            <input class="utm_term" type="hidden" name="Ключевое слово" value="">
+            <input class="utm_content" type="hidden" name="Содержание кампании" value="">
             <div class="modal__form__field__name">
               <label class="modal__form__label" for="input-name-mpd">ваше имя</label>
               <input class="modal__form__input" id="input-name-mod" type="text" maxlength="50" name="Имя" required>
@@ -179,11 +180,12 @@
         <!-- Hidden Advanced Fields-->
         <input class="modal__form-type" type="hidden" name="Форма" value="Модальное окно - подарки в честь знакомства">
         <input class="modal-form-gifts" type="hidden" name="Услуга" value="не задана">
-        <!-- UTM fields--><input type="hidden" name="Канал трафика" value="" class="utm_medium">
-<input type="hidden" name="Источник трафика" value="" class="utm_source">
-<input type="hidden" name="Название кампании" value="" class="utm_campaign">
-<input type="hidden" name="Ключевое слово" value="" class="utm_term">
-<input type="hidden" name="Содержание кампании" value="" class="utm_content">
+        <!-- UTM fields-->
+        <input class="utm_medium" type="hidden" name="Канал трафика" value="">
+        <input class="utm_source" type="hidden" name="Источник трафика" value="">
+        <input class="utm_campaign" type="hidden" name="Название кампании" value="">
+        <input class="utm_term" type="hidden" name="Ключевое слово" value="">
+        <input class="utm_content" type="hidden" name="Содержание кампании" value="">
         <div class="gifts-form__field__name">
           <label class="gifts-form__label" for="input-name-gf">ваше имя</label>
           <input class="gifts-form__input" id="input-name-gf" type="text" maxlength="100" name="Имя" required="true">
@@ -403,11 +405,12 @@
   <input type="hidden" name="mail_subject" value="Заявка с сайта &quot;lr-avangard.ru&quot;">
   <!-- Hidden Advanced Fields-->
   <input class="modal__form-type" type="hidden" name="Форма" value="Окно - заявка с коротким описанием проблемы">
-  <!-- UTM fields--><input type="hidden" name="Канал трафика" value="" class="utm_medium">
-<input type="hidden" name="Источник трафика" value="" class="utm_source">
-<input type="hidden" name="Название кампании" value="" class="utm_campaign">
-<input type="hidden" name="Ключевое слово" value="" class="utm_term">
-<input type="hidden" name="Содержание кампании" value="" class="utm_content">
+  <!-- UTM fields-->
+  <input class="utm_medium" type="hidden" name="Канал трафика" value="">
+  <input class="utm_source" type="hidden" name="Источник трафика" value="">
+  <input class="utm_campaign" type="hidden" name="Название кампании" value="">
+  <input class="utm_term" type="hidden" name="Ключевое слово" value="">
+  <input class="utm_content" type="hidden" name="Содержание кампании" value="">
   <div class="form-block__wrap">
     <div class="form-block__h2-wrap">
       <h2 class="form-block__h2">Оставьте заявку с коротким описанием проблемы</h2>
@@ -461,8 +464,10 @@
           <div class="service__cards-wrap-item">
             <div class="service__cards-wrap-item-image__service_01">
               <form class="service__card-form" id="service__card-form-01">
-                <input class="service__form-card-checkbox" id="checkbox-service-input-01" type="checkbox" checked>
-                <p class="service__form-text-checkbox">выбрано</p>
+                <label>
+                  <input class="service__form-card-checkbox" id="checkbox-service-input-01" type="checkbox" checked><span class="service__form-text-checkbox-span">
+                    <p class="service__form-text-checkbox">выбрано</p></span>
+                </label>
               </form>
               <div class="service__white-background service__white-background__visibility_hidden"></div>
             </div>
@@ -475,8 +480,10 @@
           <div class="service__cards-wrap-item">
             <div class="service__cards-wrap-item-image__service_02">
               <form class="service__card-form" id="service__card-form-02">
-                <input class="service__form-card-checkbox" id="checkbox-service-input-02" type="checkbox" checked>
-                <p class="service__form-text-checkbox">выбрано</p>
+                <label>
+                  <input class="service__form-card-checkbox" id="checkbox-service-input-02" type="checkbox" checked><span class="service__form-text-checkbox-span">
+                    <p class="service__form-text-checkbox">выбрано</p></span>
+                </label>
               </form>
               <div class="service__white-background service__white-background__visibility_hidden"></div>
             </div>
@@ -489,8 +496,10 @@
           <div class="service__cards-wrap-item">
             <div class="service__cards-wrap-item-image__service_03">
               <form class="service__card-form" id="service__card-form-03">
-                <input class="service__form-card-checkbox" id="checkbox-service-input-03" type="checkbox">
-                <p class="service__form-text-checkbox">выбрать</p>
+                <label>
+                  <input class="service__form-card-checkbox" id="checkbox-service-input-03" type="checkbox"><span class="service__form-text-checkbox-span">
+                    <p class="service__form-text-checkbox">выбрано</p></span>
+                </label>
               </form>
               <div class="service__white-background"></div>
             </div>
@@ -503,8 +512,10 @@
           <div class="service__cards-wrap-item">
             <div class="service__cards-wrap-item-image__service_04">
               <form class="service__card-form" id="service__card-form-04">
-                <input class="service__form-card-checkbox" id="checkbox-service-input-04" type="checkbox">
-                <p class="service__form-text-checkbox">выбрать</p>
+                <label>
+                  <input class="service__form-card-checkbox" id="checkbox-service-input-04" type="checkbox"><span class="service__form-text-checkbox-span">
+                    <p class="service__form-text-checkbox">выбрано</p></span>
+                </label>
               </form>
               <div class="service__white-background"></div>
             </div>
@@ -517,8 +528,10 @@
           <div class="service__cards-wrap-item">
             <div class="service__cards-wrap-item-image__service_05">
               <form class="service__card-form" id="service__card-form-05">
-                <input class="service__form-card-checkbox" id="checkbox-service-input-05" type="checkbox">
-                <p class="service__form-text-checkbox">выбрать</p>
+                <label>
+                  <input class="service__form-card-checkbox" id="checkbox-service-input-05" type="checkbox"><span class="service__form-text-checkbox-span">
+                    <p class="service__form-text-checkbox">выбрано</p></span>
+                </label>
               </form>
               <div class="service__white-background"></div>
             </div>
@@ -542,7 +555,7 @@
             </div>
           </div>
           <div class="service__choose-item-wrap" id="service_02">
-            <p class="service__choose-item-text">Ремонт электрического оборудования и систем</p>
+            <p class="service__choose-item-text">Диагностика и ремонт подвески</p>
             <div class="service__choose-item-number-wrap">
               <p class="service__choose-item-number">02</p>
             </div>
@@ -554,11 +567,12 @@
           <!-- Hidden Advanced Fields-->
           <input class="modal__form-type" type="hidden" name="Форма" value="Форма - услуги">
           <input class="modal-form-service" type="hidden" name="Услуга" value="не задано">
-          <!-- Hidden Advanced Fields--><input type="hidden" name="Канал трафика" value="" class="utm_medium">
-<input type="hidden" name="Источник трафика" value="" class="utm_source">
-<input type="hidden" name="Название кампании" value="" class="utm_campaign">
-<input type="hidden" name="Ключевое слово" value="" class="utm_term">
-<input type="hidden" name="Содержание кампании" value="" class="utm_content">
+          <!-- Hidden Advanced Fields-->
+          <input class="utm_medium" type="hidden" name="Канал трафика" value="">
+          <input class="utm_source" type="hidden" name="Источник трафика" value="">
+          <input class="utm_campaign" type="hidden" name="Название кампании" value="">
+          <input class="utm_term" type="hidden" name="Ключевое слово" value="">
+          <input class="utm_content" type="hidden" name="Содержание кампании" value="">
           <div class="gifts-form__sevice_true">
             <div class="gifts-form__field__name__service_true">
               <label class="gifts-form__label" for="input-name-sv">ваше имя</label>
@@ -673,5 +687,5 @@
 </div>
     </footer>
   </div>
-<script type="text/javascript" src="/js/main/index.js"></script><script type="text/javascript" src="/js/common/index.js"></script></body>
+<script type="text/javascript" src="/js/common/index.js"></script><script type="text/javascript" src="/js/main/index.js"></script></body>
 </html>

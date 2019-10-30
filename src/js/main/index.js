@@ -1,6 +1,7 @@
 import '../../scss/main/style.scss';
 import '../../assets/images/favicons/android-chrome-192x192.png';
 import '../../assets/images/favicons/android-chrome-512x512.png';
+import '../../assets/images/common/img__map-pin.svg';
 import './client.js';
 
 // const urls = [

@@ -104,7 +104,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|woff|woff2|ttf|otf|svg|xml)$/i,
-        exclude: /(android-chrome-192x192.png)|(android-chrome-512x512.png)/i,
+        exclude: /(android-chrome-192x192.png)|(android-chrome-512x512.png)|(img__map-pin.svg)/i,
         loader: 'file-loader',
         options: {
           name() {
@@ -113,7 +113,7 @@ module.exports = {
         },
       },
       {
-        test: /(android-chrome-192x192.png)|(android-chrome-512x512.png)/i,
+        test: /(android-chrome-192x192.png)|(android-chrome-512x512.png)|(img__map-pin.svg)/i,
         loader: 'file-loader',
         options: {
           name() {

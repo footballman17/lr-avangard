@@ -18,12 +18,6 @@ const TeamSlider = {
 
   // инициализировать srcImagesList, maximumNumWorker
   initSrcImagesList() {
-    console.log('----');
-
-    const test = $('.team__photos img');
-
-    console.log(test);
-
     let listImagesSrc = $('.team__photos img').map(function(indx, element) {
       return $(element).attr('src');
     });

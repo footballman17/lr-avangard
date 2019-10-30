@@ -3,6 +3,7 @@ import initModalWindow from './units/modal.js';
 import {initTeamSlider} from './units/teamSlider.js';
 import {initServicesLayerHandle} from './units/services.js';
 import utmHandle from './units/utm.js';
+import yandexMap from './units/yandexMap';
 
 const $ = require('jquery');
 
@@ -21,6 +22,45 @@ $(document).ready(function() {
 
   // иницилизировать utm-метки
   utmHandle();
+
+  // инициализировать работу яндекс-карт
+  yandexMap();
+
+  // https://api-maps.yandex.ru/2.1/?lang=ru_RU
+
+  // try {
+  //   const maps = await ymaps.load();
+  //   const mapContainer = document.createElement("div");
+  //   mapContainer.style.height = "512px";
+  //   mapContainer.style.width = "512px";
+  //   app.removeChild(button);
+  //   app.appendChild(mapContainer);
+  //   new maps.Map(mapContainer, {
+  //     center: [-8.369326, 115.166023],
+  //     zoom: 8
+  //   });
+  // } catch (error) {
+  //   console.error("Something went wrong", error);
+  // }
+
+  // ymaps
+  //   .load()
+  //   .then(maps => {
+  //     const map = new maps.Map('contactsMap', {
+  //       center: [-8.369326, 115.166023],
+  //       zoom: 7,
+  //     });
+  //   })
+  //   .catch(error => console.log('Failed to load Yandex Maps', error));
+
+  // ymaps.load('https://api-maps.yandex.ru/2.1/?lang=en_US').then(maps => {
+  //   new maps.Map('contactsMap', {
+  //     center: [-8.369326, 115.166023],
+  //     zoom: 7,
+  //   });
+  // })
+  //   .catch(error => console.log('Failed to load Yandex Maps', error));
+  // });
 
   // let arrServces = [];
   // // выбор подарка

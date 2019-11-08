@@ -1,33 +1,61 @@
-import ServerResponseError from '../../../errors/ServerResponseError.js';
+import serverResponseError from '../../../errors/ServerResponseError.js';
+// import {checkRequiredFields, redirect, sendFormRequest} from './functions.js';
+// import {checkRequiredFields, redirect, sendFormRequest} from './functions.js';
 
 const $ = require('jquery');
-const axios = require('axios');
+const pointLibs = require('./functions.js');
 
-// проверить поля формы на пустоту
-export const checkRequiredFields = jqueryFormElement => {
-  const allRequiredFields = jqueryFormElement.find('input[required]');
-  allRequiredFields.each(function(indx, element) {
-    if ($(element).val() === '') {
-      alert('Заполните поля формы!');
+const urlPath = '/js/order.php';
+const thanksPagePath = '/thankyou.html';
+
+const alertErrorMessage =
+  'При отправке заявки на сервер произошла ошибка! Пожалуйста, повторите попытку или свяжитесь с нами по телефону.';
+const warningVoidMessage = 'Заполните поля формы!';
+const alertSuccessMessage =
+  'Заявка успешно отправлена! В ближайшее время наш менеджер свяжется с Вами.';
+
+const IS_REDIRECT_TO_THANKS_PAGE = true;
+
+export default function() {
+  $('form').submit(function() {
+    const jqueryFormElement = $(this);
+
+    // проверить поля формы на пустоту
+    if (pointLibs.checkRequiredFields(jqueryFormElement) === false) {
+      alert(warningVoidMessage);
       return false;
     }
+
+    // получить данные формы
+    const formData = jqueryFormElement.serialize();
+
+    (async () => {
+      try {
+        // отправить данные формы на сервер
+        await pointLibs.sendFormRequest(urlPath, formData);
+
+        if (IS_REDIRECT_TO_THANKS_PAGE) {
+          // перейти на страницу благодарности
+          pointLibs.redirect(thanksPagePath);
+        } else {
+          alert(alertSuccessMessage);
+        }
+      } catch (error) {
+        if (error instanceof serverResponseError) {
+          const detailErrMessage = `Error! name: '${error.name}', message: '${error.message}`;
+          console.log(detailErrMessage);
+          alert(alertErrorMessage);
+        } else {
+          console.log(`Unexpected error! stack: '${error.stack}'`);
+        }
+      } finally {
+        // закрыть модальное окно
+        $('.modal-wrapper').toggleClass(
+          'modal-wrapper__active modal-wrapper__inactive'
+        );
+      }
+    })();
+
+    return false;
   });
-  return true;
-};
-
-// переадресовать на другую страницу
-export const redirect = $pagePath => {
-  $(window.location).attr('href', $pagePath);
-};
-
-// отправить заявку на сервер
-export const sendFormRequest = async (url, data) => {
-  try {
-    const response = await axios.post(url, data);
-  } catch (error) {
-    throw new ServerResponseError(
-      `Ошибка при отправке заявки на сервер!`,
-      error
-    );
-  }
-};
+}

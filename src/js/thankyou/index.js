@@ -1,1 +1,1 @@
-console.log('hello from thankyou');
+console.log('Start thankyou page');

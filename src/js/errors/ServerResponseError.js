@@ -1,12 +1,11 @@
 const util = require('util');
 
-function YandexApiError(message, errObjCause) {
+function ServerResponseError(message) {
   this.message = message;
-  this.cause = errObjCause;
-  Error.captureStackTrace(this, YandexApiError);
+  Error.captureStackTrace(this, ServerResponseError);
 }
 
-util.inherits(YandexApiError, Error);
-YandexApiError.prototype.name = 'YandexApiError';
+util.inherits(ServerResponseError, Error);
+ServerResponseError.prototype.name = 'ServerResponseError';
 
-module.exports = YandexApiError;
+module.exports = ServerResponseError;

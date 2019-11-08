@@ -266,7 +266,7 @@ $(document).ready(function() {
   // });
   // $('body').keydown(function(e) {
   //   if (e.keyCode == 27) {
-  //     $('.modal_active').toggleClass('modal_active modal_inactive');
+  //     $('.m`odal_active').toggleClass('modal_active modal_inactive');
   //   }
   // });
   // });
@@ -282,6 +282,30 @@ $(document).ready(function() {
   //     alert('Заполните поля формы!');
   //     return false;
   //   }
+  // E-mail Ajax Send
+
+  //   const th = $(this);
+  //   // console.log(decodeURI(th.serialize()));
+  //   $.ajax({
+  //     type: 'POST',
+  //     url: '/js/order.php',
+  //     data: th.serialize(),
+  //   }).done(function() {
+  //     // Go to Thanks page
+  //     $(location).attr('href', '/thankyou.html');
+  //     // Open Thanks window
+  //     // alert(
+  //     //   'Заявка успешно отправлена! В ближайшее время наш менеджер свяжется с Вами.'
+  //     // );
+  //     setTimeout(function() {
+  //       // Done Functions
+  //       $('.modal-wrapper').toggleClass(
+  //         'modal-wrapper__active modal-wrapper__inactive'
+  //       );
+  //     }, 1000);
+  //   });
+  //   return false;
+  // });
 
   // Get UTM function
   // function getUTM(name) {
@@ -308,19 +332,6 @@ $(document).ready(function() {
 
   // // Call Scroll to id
   // scrollToId('.main-menu__link');
-
-  // // Calc raiting
-  // if($('section').is('.reviews')) {
-  // 	var raitingSum = 0;
-  // 	var raitingAvg = 0;
-  // 	var raitingCount = $('[itemprop="ratingValue"]').length;
-  // 	$('[itemprop="ratingValue"]').each(function() {
-  // 		raitingSum += Number.parseInt($(this).text());
-  // 	});
-  // 	raitingAvg = Math.round((raitingSum / raitingCount) * 10) / 10;
-  // 	$('.reviews__org-raiting').text(raitingAvg);
-  // 	$('.reviews__org-count').text(raitingCount);
-  // }
 
   // Yandex map
 

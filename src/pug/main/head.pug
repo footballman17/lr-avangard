@@ -1,5 +1,3 @@
-- var adminEmail = "footballman170@yandex.ru";
-- var nameSite = "lr-avangard.ru";
 head
 	meta(charset="utf-8")
 	meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
@@ -10,9 +8,9 @@ head
 	// Social share for VK, Facebook, OK, Google+
 	meta(property='og:type', content='website')
 	meta(property='og:locale', content='ru_RU')
-	meta(property='og:site_name', content='#{projectTitle}')
-	meta(property='og:url', content='#{projectPath}')
-	meta(property='og:title', content='Новый сервис Ленд Ровер на ТТК в Москве')
+	meta(property='og:site_name', content=projectTitle)
+	meta(property='og:url', content=nameSite)
+	meta(property='og:title', content=projectTitle)
 	meta(property='og:description', content='Гарантируем лучшее предложение по Москве! Звоните: +7(495) 241-29-39. Приезжайте:  г. Москва, ул. Двинцев 3с6.')
 	link(rel='image_src', href=require("../../assets/images/default/img__og-image-default.jpg"))
 	meta(property='og:image', content=require('../../assets/images/default/img__og-image-default.jpg'))
@@ -21,10 +19,10 @@ head
 
 	// Social share for Twitter
 	meta(name='twitter:card', content='summary_large_image')
-	meta(name='twitter:title', content='Новый сервис Ленд Ровер на ТТК в Москве')
+	meta(name='twitter:title', content=projectTitle)
 	meta(name='twitter:description', content='Гарантируем лучшее предложение по Москве! Звоните: +7(495) 241-29-39. Приезжайте:  г. Москва, ул. Двинцев 3с6.')
 	meta(name='twitter:image:src', content=require('../../assets/images/default/img__og-image-default.jpg'))
-	meta(name='twitter:url', content='#{projectPath}')
+	meta(name='twitter:url', content=nameSite)
 	meta(name='twitter:domain', content='/')
 	meta(name='twitter:site', content='@colorpink')
 	meta(name='twitter:creator', content='@colorpink')
@@ -38,5 +36,4 @@ head
 	meta(content=require("../../assets/images/favicons/browserconfig.xml"), name="msapplication-config")
 	meta(content="#ffffff", name="theme-color")
 	// Title
-	title
-		| Новый сервис Ленд Ровер на ТТК в Москве
+	title #{projectTitle}

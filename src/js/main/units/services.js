@@ -38,6 +38,7 @@ const servicesHandleObject = {
     $('.service__span-cnt-sevices').text(
       servicesHandleObject.cntCheckedServices
     );
+
     $('.service__choose-list').append(
       `<div class="service__choose-item-wrap" id="service_0${curNumElement}">
           <p class="service__choose-item-text">${serviceText}</p>

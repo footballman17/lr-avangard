@@ -3,27 +3,23 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
-const AssetsPlugin = require('assets-webpack-plugin');
+// const AssetsPlugin = require('assets-webpack-plugin');
 
 module.exports = {
   optimization: {
-    // noEmitOnErrors: true,
     splitChunks: {
-      // из каких файлов выносить общий код
       chunks: 'all',
-      minSize: 30,
-      // минимальное количество файлов
-      // с одинаковым кодом
+      minSize: 1,
       minChunks: 2,
-      name: 'common',
+      name: 'common-chunk',
     },
   },
   watch: true,
   // точки входа
   entry: {
-    main: './js/main/index.js',
-    thankyou: './js/thankyou/index.js',
-    common: './js/common.js',
+    common: ['./js/common.js'],
+    main: ['@babel/polyfill', './js/main/index.js'],
+    thankyou: ['./js/thankyou/index.js'],
   },
 
   output: {
@@ -37,7 +33,7 @@ module.exports = {
     rules: [
       {
         test: /\.m?js$/,
-        include: [path.resolve(__dirname, 'src/')],
+        // include: [path.resolve(__dirname, 'src/')],
         use: {
           loader: 'babel-loader',
           options: {
@@ -98,6 +94,7 @@ module.exports = {
             loader: 'pug-loader',
             options: {
               pretty: true,
+              self: true,
             },
           },
         ],
@@ -113,7 +110,7 @@ module.exports = {
         },
       },
       {
-        test: /(android-chrome-192x192.png)|(android-chrome-512x512.png)|(img__map-pin.svg)/i,
+        test: /(android-chrome-192x192.png)|(android-chrome-512x512.png)|(img__map-pin.svg)|(\.(php|html))/i,
         loader: 'file-loader',
         options: {
           name() {
@@ -131,11 +128,11 @@ module.exports = {
           },
         },
       },
-      {
-        test: /\.html$/,
-        include: [path.resolve(__dirname, 'src/')],
-        use: ['html-loader'],
-      },
+      // {
+      //   test: /\.html$/,
+      //   include: [path.resolve(__dirname, 'src/')],
+      //   use: ['html-loader'],
+      // },
     ],
   },
 
@@ -143,26 +140,26 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'css/[name]/style.css',
     }),
-    new CleanWebpackPlugin(),
-    new AssetsPlugin({
-      filename: 'assets.json',
-      path: path.resolve(__dirname, 'dev/js'),
-      prettyPrint: true,
-      processOutput(assets) {
-        console.log('************************');
-        console.log(assets);
-        console.log('************************');
-        return `window.staticMap = ${JSON.stringify(assets)}`;
-      },
-    }),
+    new CleanWebpackPlugin({}),
+    // new AssetsPlugin({
+    //   filename: 'assets.json',
+    //   path: path.resolve(__dirname, 'dev/js'),
+    //   prettyPrint: true,
+    //   processOutput(assets) {
+    //     console.log('************************');
+    //     console.log(assets);
+    //     console.log('************************');
+    //     return `window.staticMap = ${JSON.stringify(assets)}`;
+    //   },
+    // }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      chunks: ['common', 'main'],
+      chunks: ['main', 'common', 'common-chunk'],
       template: './pug/main/index.pug',
     }),
     new HtmlWebpackPlugin({
       filename: 'thankyou.html',
-      chunks: ['common', 'thankyou'],
+      chunks: ['thankyou', 'common', 'common-chunk'],
       template: './pug/thankyou/index.pug',
     }),
   ],

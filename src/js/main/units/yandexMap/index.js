@@ -34,7 +34,7 @@ export default function yandexMap() {
         },
         {
           iconLayout: 'default#image',
-          iconImageHref: 'assets/images/common/img__map-pin.svg',
+          iconImageHref: './assets/images/common/img__map-pin.svg',
           iconImageSize: [142, 58],
           iconImageOffset: [-90, -62],
         }

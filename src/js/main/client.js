@@ -1,5 +1,6 @@
 import initGiftsLayerHandle from './units/gifts.js';
 import initModalWindow from './units/modal.js';
+import initSendRequest from './units/sendRequest';
 import {initTeamSlider} from './units/teamSlider.js';
 import {initServicesLayerHandle} from './units/services.js';
 import utmHandle from './units/utm.js';
@@ -10,6 +11,9 @@ const $ = require('jquery');
 $(document).ready(function() {
   // инициализировать работу модального окна
   initModalWindow();
+
+  // инициализировать отправку заявки
+  initSendRequest();
 
   // инициализировать работу слоя "Подарки"
   initGiftsLayerHandle();

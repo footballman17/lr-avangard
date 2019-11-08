@@ -44,8 +44,6 @@ const TeamSlider = {
       TeamSlider.changePersonalInfo(this.id);
       TeamSlider.setCurrentNumWorker(this.id);
       TeamSlider.setRedBorder(this);
-
-      console.log(TeamSlider.srcImagesList);
     });
 
     // инициализировать обработку кнопок со стрелками

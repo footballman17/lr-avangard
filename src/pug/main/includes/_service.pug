@@ -1,5 +1,3 @@
-- var adminEmail = "footballman170@yandex.ru";
-- var nameSite = "lr-avangard.ru";
 .about
   .about__max-width-wrap
     .about__content-wrap
@@ -110,8 +108,8 @@
               p.service__choose-item-number
                 | 02
         form.service__form
-          //- input(type='hidden', name='project_name', value='#{projectTitle}')
-          input(type='hidden', name='admin_email', value=`${adminEmail}`)
+          input(type='hidden', name='project_name', value=projectName)
+          input(type='hidden', name='admin_email', value=adminEmail)
           input(type='hidden', name='mail_subject', value=`Заявка с сайта "${nameSite}"`)
           // Hidden Advanced Fields
           //- input(class="modal__form-page", type="hidden", name="Страница", value="#{pageTitle}")

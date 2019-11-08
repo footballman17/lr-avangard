@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./js/thankyou/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -93,7 +93,18 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('hello from thankyou');\n\n//# sourceURL=webpack:///./js/thankyou/index.js?");
+eval("console.log('Start thankyou page');\n\n//# sourceURL=webpack:///./js/thankyou/index.js?");
+
+/***/ }),
+
+/***/ 2:
+/*!************************************!*\
+  !*** multi ./js/thankyou/index.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__(/*! ./js/thankyou/index.js */\"./js/thankyou/index.js\");\n\n\n//# sourceURL=webpack:///multi_./js/thankyou/index.js?");
 
 /***/ })
 

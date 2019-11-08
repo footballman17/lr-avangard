@@ -2,14 +2,24 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  // optimization: {
+  //   splitChunks: {
+  //     chunks: 'all',
+  //     minSize: 1,
+  //     minChunks: 2,
+  //     name: 'common-chunk',
+  //   },
+  // },
   // точки входа
   entry: {
-    main: '../hot/index.js',
+    // common: ['./js/common.js'],
+    main: ['@babel/polyfill', '../hot/main/index.js'],
+    thankyou: ['@babel/polyfill', '../hot/thankyou/index.js'],
   },
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    filename: 'js/[name]/index.js',
     // интернет-путь
     publicPath: '/',
   },
@@ -36,11 +46,15 @@ module.exports = {
       },
       {
         test: /\.pug$/i,
-        use: ['pug-loader'],
+        use: [
+          {
+            loader: 'pug-loader',
+          },
+        ],
       },
       {
         test: /\.(png|jpe?g|gif|woff|woff2|ttf|otf|svg|xml)$/i,
-        exclude: /(android-chrome-192x192.png)|(android-chrome-512x512.png)/i,
+        exclude: /(android-chrome-192x192.png)|(android-chrome-512x512.png)|(img__map-pin.svg)/i,
         loader: 'file-loader',
         options: {
           name() {
@@ -49,7 +63,8 @@ module.exports = {
         },
       },
       {
-        test: /(android-chrome-192x192.png)|(android-chrome-512x512.png)/i,
+        test: /(android-chrome-192x192.png)|(android-chrome-512x512.png)|(img__map-pin.svg)|(\.(php|html))/i,
+        exclude: /(template.html)/,
         loader: 'file-loader',
         options: {
           name() {
@@ -67,11 +82,6 @@ module.exports = {
           },
         },
       },
-      {
-        test: /\.html$/,
-        include: [path.resolve(__dirname, 'src/')],
-        use: ['html-loader'],
-      },
     ],
   },
   devServer: {
@@ -81,9 +91,27 @@ module.exports = {
   },
 
   plugins: [
+    // new HtmlWebpackPlugin({
+    // filename: 'index.html',
+    // chunks: ['main', 'common', 'common-chunk'],
+    // template: '../hot/template.html',
+    //   common: ['./js/common.js'],
+    //   main: ['@babel/polyfill', './js/main/index.js'],
+    //   thankyou: ['./js/thankyou/index.js'],
+    // }),
+    // new HtmlWebpackPlugin({
+    //   filename: 'thankyou.html',
+    //   chunks: ['common', 'thankyou'],
+    //   template: '../hot/template.html',
+    // }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       chunks: ['main'],
+      template: '../hot/template.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'thankyou.html',
+      chunks: ['thankyou'],
       template: '../hot/template.html',
     }),
   ],

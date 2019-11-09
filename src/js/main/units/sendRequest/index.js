@@ -43,16 +43,19 @@ export default function() {
       } catch (error) {
         if (error instanceof serverResponseError) {
           const detailErrMessage = `Error! name: '${error.name}', message: '${error.message}`;
-          console.log(detailErrMessage);
+          console.error(detailErrMessage);
           alert(alertErrorMessage);
         } else {
-          console.log(`Unexpected error! stack: '${error.stack}'`);
+          console.error(`Unexpected error! stack: '${error.stack}'`);
         }
       } finally {
         // закрыть модальное окно
-        $('.modal-wrapper').toggleClass(
-          'modal-wrapper__active modal-wrapper__inactive'
-        );
+        const modalWrapper = $('.modal-wrapper');
+        if (modalWrapper.hasClass('modal-wrapper__active')) {
+          modalWrapper.toggleClass(
+            'modal-wrapper__active modal-wrapper__inactive'
+          );
+        }
       }
     })();
 

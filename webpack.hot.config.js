@@ -15,6 +15,10 @@ module.exports = {
     // common: ['./js/common.js'],
     main: ['@babel/polyfill', '../hot/main/index.js'],
     thankyou: ['@babel/polyfill', '../hot/thankyou/index.js'],
+    // main: ['../hot/main/index.js'],
+
+    // main: ['../hot/main/index.js'],
+    // thankyou: ['../hot/thankyou/index.js'],
   },
 
   output: {

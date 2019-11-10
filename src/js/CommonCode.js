@@ -11,9 +11,9 @@ import '../docs/tpl-email/tpl-email_v1.html';
 
 const $ = require('jquery');
 
-// IMG drag none
-$('img, a').on('dragstart', function() {
-  return false;
-});
-
-console.log('hello common');
+export default function() {
+  // IMG drag none
+  $('img, a').on('dragstart', function() {
+    return false;
+  });
+}

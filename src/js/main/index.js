@@ -1,3 +1,7 @@
-import './client.js';
+import CommonCode from '../CommonCode.js';
+import ClientCode from './ClientCode.js';
 
-console.log('hello index');
+$(document).ready(function() {
+  CommonCode();
+  ClientCode();
+});

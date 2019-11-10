@@ -16,7 +16,9 @@ export default function(pugTemplate) {
 
   const newHeadHtml = htmlObject.getHtmlFromTag('head');
   const newBodyHtml = htmlObject.getHtmlFromTag('body');
+
   $('head *:not(style)').remove();
   $('head').prepend(newHeadHtml);
+
   $('body').html(newBodyHtml);
 }

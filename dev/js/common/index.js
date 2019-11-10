@@ -153,106 +153,15 @@
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./assets/images/common/img__map-pin.svg":
-/*!***********************************************!*\
-  !*** ./assets/images/common/img__map-pin.svg ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"assets/images/common/img__map-pin.svg\";\n\n//# sourceURL=webpack:///./assets/images/common/img__map-pin.svg?");
-
-/***/ }),
-
-/***/ "./assets/images/favicons/android-chrome-192x192.png":
-/*!***********************************************************!*\
-  !*** ./assets/images/favicons/android-chrome-192x192.png ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"assets/images/favicons/android-chrome-192x192.png\";\n\n//# sourceURL=webpack:///./assets/images/favicons/android-chrome-192x192.png?");
-
-/***/ }),
-
-/***/ "./assets/images/favicons/android-chrome-512x512.png":
-/*!***********************************************************!*\
-  !*** ./assets/images/favicons/android-chrome-512x512.png ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"assets/images/favicons/android-chrome-512x512.png\";\n\n//# sourceURL=webpack:///./assets/images/favicons/android-chrome-512x512.png?");
-
-/***/ }),
-
-/***/ "./docs/tpl-email/tpl-email_v1.html":
-/*!******************************************!*\
-  !*** ./docs/tpl-email/tpl-email_v1.html ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"docs/tpl-email/tpl-email_v1.html\";\n\n//# sourceURL=webpack:///./docs/tpl-email/tpl-email_v1.html?");
-
-/***/ }),
-
-/***/ "./js/common.js":
-/*!**********************!*\
-  !*** ./js/common.js ***!
-  \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_common_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/common/style.scss */ \"./scss/common/style.scss\");\n/* harmony import */ var _scss_common_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_common_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_images_favicons_android_chrome_192x192_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/images/favicons/android-chrome-192x192.png */ \"./assets/images/favicons/android-chrome-192x192.png\");\n/* harmony import */ var _assets_images_favicons_android_chrome_192x192_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_images_favicons_android_chrome_192x192_png__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets_images_favicons_android_chrome_512x512_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/images/favicons/android-chrome-512x512.png */ \"./assets/images/favicons/android-chrome-512x512.png\");\n/* harmony import */ var _assets_images_favicons_android_chrome_512x512_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_favicons_android_chrome_512x512_png__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _assets_images_common_img_map_pin_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/images/common/img__map-pin.svg */ \"./assets/images/common/img__map-pin.svg\");\n/* harmony import */ var _assets_images_common_img_map_pin_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_common_img_map_pin_svg__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _order_php__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./order.php */ \"./js/order.php\");\n/* harmony import */ var _order_php__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_order_php__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _sendmailsmtpclass_php__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sendmailsmtpclass.php */ \"./js/sendmailsmtpclass.php\");\n/* harmony import */ var _sendmailsmtpclass_php__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_sendmailsmtpclass_php__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _docs_tpl_email_tpl_email_v1_html__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../docs/tpl-email/tpl-email_v1.html */ \"./docs/tpl-email/tpl-email_v1.html\");\n/* harmony import */ var _docs_tpl_email_tpl_email_v1_html__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_docs_tpl_email_tpl_email_v1_html__WEBPACK_IMPORTED_MODULE_6__);\n// стили\n // файлы\n\n\n\n\n\n\n\n\nvar $ = __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\"); // IMG drag none\n\n\n$('img, a').on('dragstart', function () {\n  return false;\n});\nconsole.log('hello common');\n\n//# sourceURL=webpack:///./js/common.js?");
-
-/***/ }),
-
-/***/ "./js/order.php":
-/*!**********************!*\
-  !*** ./js/order.php ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"js/order.php\";\n\n//# sourceURL=webpack:///./js/order.php?");
-
-/***/ }),
-
-/***/ "./js/sendmailsmtpclass.php":
-/*!**********************************!*\
-  !*** ./js/sendmailsmtpclass.php ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"js/sendmailsmtpclass.php\";\n\n//# sourceURL=webpack:///./js/sendmailsmtpclass.php?");
-
-/***/ }),
-
-/***/ "./scss/common/style.scss":
+/******/ ([
+/* 0 */
 /*!********************************!*\
-  !*** ./scss/common/style.scss ***!
+  !*** multi ./js/CommonCode.js ***!
   \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./scss/common/style.scss?");
-
-/***/ }),
-
-/***/ 0:
-/*!****************************!*\
-  !*** multi ./js/common.js ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__(/*! ./js/common.js */\"./js/common.js\");\n\n\n//# sourceURL=webpack:///multi_./js/common.js?");
+eval("module.exports = __webpack_require__(/*! ./js/CommonCode.js */\"./js/CommonCode.js\");\n\n\n//# sourceURL=webpack:///multi_./js/CommonCode.js?");
 
 /***/ })
-
-/******/ });
+/******/ ]);

@@ -90,10 +90,11 @@
 /*!******************************!*\
   !*** ./js/thankyou/index.js ***!
   \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log('Start thankyou page');\n\n//# sourceURL=webpack:///./js/thankyou/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () {\n  console.log('Start thankyou page');\n});\n\n//# sourceURL=webpack:///./js/thankyou/index.js?");
 
 /***/ }),
 

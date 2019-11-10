@@ -17,7 +17,7 @@ module.exports = {
   watch: true,
   // точки входа
   entry: {
-    common: ['./js/common.js'],
+    common: ['./js/CommonCode.js'],
     main: ['@babel/polyfill', './js/main/index.js'],
     thankyou: ['./js/thankyou/index.js'],
   },
@@ -128,11 +128,6 @@ module.exports = {
           },
         },
       },
-      // {
-      //   test: /\.html$/,
-      //   include: [path.resolve(__dirname, 'src/')],
-      //   use: ['html-loader'],
-      // },
     ],
   },
 

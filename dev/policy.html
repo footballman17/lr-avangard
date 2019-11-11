@@ -1,17 +1,207 @@
-Html Webpack Plugin:
-<pre>
-  ReferenceError: userPhone is not defined
-  
-  - head.pug?:4 template
-    C:\OSPanel\domains\landrover/src/pug/policy/head.pug?:4:301
-  
-  - loader.js:10 template
-    [index.pug?..]/[html-webpack-plugin]/lib/loader.js:10:169
-  
-  - index.js:284 Promise.resolve.then
-    [landrover]/[html-webpack-plugin]/index.js:284:18
-  
-  - next_tick.js:68 process._tickCallback
-    internal/process/next_tick.js:68:7
-  
-</pre>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="description" content="Гарантируем лучшее предложение по Москве! Звоните: +7(495) 241-29-39. Приезжайте:  Москва, ул. Двинцев 3с6.">
+  <meta name="keywords" content="lr-premium, auto, land rover, range rover, range rover sport, range rover evoque, discovery, discovery sport, freelander 2">
+  <meta name="robots" content="index, follow">
+  <!-- Social share for VK, Facebook, OK, Google+-->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Новый сервис Ленд Ровер на ТТК в Москве">
+  <meta property="og:url" content="lr-avangard.ru">
+  <meta property="og:title" content="Новый сервис Ленд Ровер на ТТК в Москве">
+  <meta property="og:description" content="Гарантируем лучшее предложение по Москве! Звоните:  +7(495) 241-29-39. Приезжайте:  Москва, ул. Двинцев 3с6.">
+  <link rel="image_src" href="/assets/images/default/img__og-image-default.a37f78.jpg">
+  <meta property="og:image" content="/assets/images/default/img__og-image-default.a37f78.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <!-- Social share for Twitter-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Новый сервис Ленд Ровер на ТТК в Москве">
+  <meta name="twitter:description" content="Гарантируем лучшее предложение по Москве! Звоните:  +7(495) 241-29-39. Приезжайте:  Москва, ул. Двинцев 3с6.">
+  <meta name="twitter:image:src" content="/assets/images/default/img__og-image-default.a37f78.jpg">
+  <meta name="twitter:url" content="lr-avangard.ru">
+  <meta name="twitter:domain" content="/">
+  <meta name="twitter:site" content="@colorpink">
+  <meta name="twitter:creator" content="@colorpink">
+  <!-- Favicon-->
+  <link href="/assets/images/favicons/apple-touch-icon.c24eef.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="/assets/images/favicons/favicon-32x32.f9be93.png" rel="icon" type="image/png" sizes="32x32">
+  <link href="/assets/images/favicons/favicon-16x16.d44349.png" rel="icon" type="image/png" sizes="16x16">
+  <link href="/assets/images/favicons/manifest.22e604.json" rel="manifest">
+  <link href="/assets/images/favicons/safari-pinned-tab.f66c6a.svg" rel="mask-icon" color="#3d515e">
+  <meta content="/assets/images/favicons/browserconfig.e9fd09.xml" name="msapplication-config">
+  <meta content="#ffffff" name="theme-color">
+  <!-- Google Tag Manager-->
+  <script>
+    (function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+    'gtm.start':
+    new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TXJ85ML');
+  </script>
+  <!-- End Google Tag Manager-->
+  <!-- Title-->
+  <title>Новый сервис Ленд Ровер на ТТК в Москве</title>
+<link href="/css/common-chunk/style.css" rel="stylesheet"></head>
+<body>
+<div class="modal-wrapper modal-wrapper__inactive">
+  <div class="modal-wrap">
+    <div class="modal">
+      <div class="modal__content-wrap">
+        <div class="modal__flex-wrap">
+          <div class="modal__text-block">
+            <h2 class="modal__h2">Оставьте заявку</h2>
+            <p class="modal__fill-text">Заполните форму. Наш менеджер свяжется с вами в ближайшее время.</p>
+          </div>
+          <form class="modal__form">
+            <!-- Hidden Required Fields-->
+            <input type="hidden" name="project_name" value="LR Avangard">
+            <input type="hidden" name="admin_email" value="footballman170@yandex.ru">
+            <input type="hidden" name="mail_subject" value="Заявка с сайта &quot;lr-avangard.ru&quot;">
+            <!-- Hidden Advanced Fields-->
+            <input class="modal__form-page" type="hidden" name="Страница" value="Политика конфиденциальности">
+            <input class="modal__form-type" type="hidden" name="Форма" value="Модальное окно">
+            <input class="modal-form-data" type="hidden" name="Услуга" value="">
+            <!-- UTM fields-->
+            <input class="utm_medium" type="hidden" name="Канал трафика" value="">
+            <input class="utm_source" type="hidden" name="Источник трафика" value="">
+            <input class="utm_campaign" type="hidden" name="Название кампании" value="">
+            <input class="utm_term" type="hidden" name="Ключевое слово" value="">
+            <input class="utm_content" type="hidden" name="Содержание кампании" value="">
+            <div class="modal__form__field__name">
+              <label class="modal__form__label" for="input-name-mpd">ваше имя</label>
+              <input class="modal__form__input" id="input-name-mod" type="text" maxlength="50" name="Имя" required>
+            </div>
+            <div class="modal__form__field__phone">
+              <label class="modal__form__label" for="input-phone-mod">телефон</label>
+              <input class="modal__form__input" id="input-phone-mod" placeholder="+7" type="phone" maxlength="50" name="Телефон" required>
+            </div>
+            <div class="modal__form__button-wrap">
+              <button class="modal__form__button" type="submit">Отправить</button>
+              <div class="modal__form__hr-block"></div>
+              <div class="modal__form__hr-block__position_right"></div>
+              <div class="modal__form__or-text-block-wrap">
+                <p class="modal__form__or-text-block">или</p>
+              </div>
+              <div class="modal__form__close-icon">
+                <svg class="modal__form__close-icon-img" aria-hidden="true">
+                  <use xlink:href="/assets/images/common/sprite__icons.575d45.svg#close"></use>
+                </svg>
+              </div>
+              <div class="modal__form__close-text-wrap">
+                <p class="modal__form__close-text">Закрыть окно</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="header-block">
+    <div class="header-block__max-width-wrap">
+      <div class="header-block__logo-section">
+        <div class="telephone"><a class="telephone__link" href="tel:+7(495)241-29-89" title="Позвонить">+7(495) 241-29-39</a></div>
+        <div class="logo"><a href="/" title="Сервис Ленд Ровер в Москве"><img src="/assets/images/common/img__logo.8da05e.svg" alt="Сервис Ленд Ровер в Москве" title="Сервис Ленд Ровер в Москве"></a></div>
+        <div class="menu">
+          <p class="menu__span-block"><span class="menu__span-icon"><a href="/">
+                <svg class="menu__icon" aria-hidden="true">
+                  <use xlink:href="/assets/images/common/sprite__icons.575d45.svgarrow-left"></use>
+                </svg></a></span><span class="menu__span-text"><a href="/">на главную</a></span></p>
+        </div>
+      </div>
+      <div class="header-block__line-block">
+        <hr class="header-block__hr">
+      </div>
+      <div class="header-block__left-wrap">
+        <div class="header-block__lr">
+          <p class="header-block__lr-text">LR</p>
+        </div>
+        <div class="header-block__avangard">
+          <p class="header-block__avangard-p">Avangard</p>
+        </div>
+        <div class="header-block__car"><img class="header-block__car-img" src="/assets/images/pages/thankyou/img__main-screen-car.cc884e.jpg"></div>
+      </div>
+      <div class="header-block__text-wrap">
+        <div class="header-block__text">
+          <h1 class="header-block__text-h1">Соглашение об обработке персональных данных</h1>
+          <p class="header-block__text-description__thankyou_true">Данное соглашение разработано в соответствии с законодательством Российской Федерации.</p>
+        </div>
+      </div>
+      <div class="header-block__padding-block"></div>
+    </div>
+  </div>
+  <div class="about__policy_true">
+    <div class="about__max-width-wrap__policy_true">
+      <div class="about__content-wrap__policy_true">
+        <div class="about__main-content-wrap">
+          <div class="about__hr"></div>
+          <div class="about__text-block__policy_true">
+            <div class="about__text-block-item__padding-left_none">
+              <p class="about__content-text__policy_true">	Все посетители заполнившие сведения составляющие персональные данные на сайте lr-avangard.ru, а также разметившие иную информацию обозначенными действиями, подтверждают свое согласие на обработку своих персональных данных. Под персональными данными гражданина РФ понимаются:</p>
+              <ul class="about__content-text-list">
+                <li type="disc">Ф.И.О.</li>
+                <li type="disc">Год рождения;</li>
+                <li type="disc">Личный номер телефона;</li>
+                <li type="disc">Информация из социальных сетей;</li>
+                <li type="disc">Серии и номералюбых документов;</li>
+                <li type="disc">E-mail.</li>
+              </ul>
+              <p class="about__content-text__policy_true">Посетитель сайта направляет свои персональные данные оператору, для получения необходимой информации, принадлежащей сайту lr-avangard.ru. Посетитель, принимая</p>
+            </div>
+            <div class="about__text-block-item__policy_true">
+              <p class="about__content-text__policy_true">заинтересованность и полное согласие на обработку персональных данных. Обработка персональных данных включает в себя: сбор, систематизацию, накопление, хранение, уточнение, обновление, изменение, использование, уничтожение.</p>
+              <p class="about__content-text__policy_true"><br>Посетитель гарантирует, что информация предоставленная оператору, является: полной, точной, достоверной, не нарушающей законодательство РФ, не нарушает права третьих лиц.</p>
+            </div>
+          </div>
+          <div class="about__hr__margin-top_none"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contacts">
+    <div class="contacts__max-width-wrap">
+      <div class="contacts__content-wrap">
+        <div class="contacts__card">
+          <h2 class="contacts__h2">Контакты</h2>
+          <address>
+            <p class="contacts__address-text">Москва, ул. Двинцев 3с6</p>
+            <p class="contacts__address-text">+7(495)241-29-39</p>
+            <p class="contacts__address-text">info@lr-avangard.ru</p>
+          </address>
+          <div class="contacts__form"><button class="contacts__form-button"><ul class="card-gift__ul-choose"><li class="card-gift__ellipse"></li><li class="contacts__choose-text">Оставить заявку</li></ul></button></div>
+        </div>
+        <div class="contacts__map" id="contactsMap"></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer__max-width-wrap">
+      <div class="footer__content-wrap">
+        <div class="footer__hr"></div>
+        <div class="footer__flex-wrap">
+          <div class="footer__logo-block">
+            <div class="footer__logo-wrap"><a href="/" title="Сервис Ленд Ровер в Москве"><img class="footer__logo-img" src="/assets/images/common/img__logo.8da05e.svg" alt="Сервис Ленд Ровер в Москве" title="Сервис Ленд Ровер в Москве"></a></div>
+          </div>
+          <div class="footer__address-block">
+            <address>
+              <p class="footer__phone">+7(495) 241-29-39</p>
+              <p class="footer__email">info@lr-avangard.ru</p>
+            </address>
+          </div>
+          <div class="footer__politic-block">
+            <p class="footer__politic"><a class="footer__politic-link" href="/policy.html">Публичная оферта и политика конфиденциальности</a></p>
+            <p class="footer__copyrights">© ООО «Ленд Ровер Москва»,<br>2002—2019.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="/js/common-chunk/index.js"></script><script type="text/javascript" src="/js/common/index.js"></script><script type="text/javascript" src="/js/main/index.js"></script><script type="text/javascript" src="/js/policy/index.js"></script></body>
+</html>

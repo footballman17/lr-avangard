@@ -111,7 +111,7 @@ module.exports = {
         },
       },
       {
-        test: /(android-chrome-192x192.png)|(android-chrome-512x512.png)|(img__map-pin.svg)|(\.(php|html))/i,
+        test: /(android-chrome-192x192.png)|(android-chrome-512x512.png)|(img__map-pin.svg)|(\.(php|html|htaccess))/i,
         loader: 'file-loader',
         options: {
           name() {

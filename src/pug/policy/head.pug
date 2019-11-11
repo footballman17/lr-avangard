@@ -35,5 +35,18 @@ head
 	link(href=require("../../assets/images/favicons/safari-pinned-tab.svg"), rel="mask-icon", color="#3d515e")
 	meta(content=require("../../assets/images/favicons/browserconfig.xml"), name="msapplication-config")
 	meta(content="#ffffff", name="theme-color")
+
+	// Google Tag Manager
+	script.
+		(function (w, d, s, l, i) {
+		w[l] = w[l] || []; w[l].push({
+		'gtm.start':
+		new Date().getTime(), event: 'gtm.js'
+		}); var f = d.getElementsByTagName(s)[0],
+		j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+		'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-TXJ85ML');
+	// End Google Tag Manager
+
 	// Title
 	title #{projectTitle}

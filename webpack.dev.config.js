@@ -20,6 +20,7 @@ module.exports = {
     common: ['./js/CommonCode.js'],
     main: ['@babel/polyfill', './js/main/index.js'],
     thankyou: ['./js/thankyou/index.js'],
+    policy: ['./js/policy/index.js'],
   },
 
   output: {
@@ -156,6 +157,11 @@ module.exports = {
       filename: 'thankyou.html',
       chunks: ['thankyou', 'common', 'common-chunk'],
       template: './pug/thankyou/index.pug',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'policy.html',
+      chunks: ['policy', 'common', 'common-chunk', 'main'],
+      template: './pug/policy/index.pug',
     }),
   ],
 };

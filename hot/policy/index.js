@@ -1,7 +1,7 @@
 import Common from '../Common.js';
-import ClientCode from '../../src/js/thankyou/index.js';
+import ClientCode from '../../src/js/main/ClientCode.js';
 
-import pugTemplate from '../../src/pug/thankyou/index.pug';
+import pugTemplate from '../../src/pug/policy/index.pug';
 import updateHeadBodyHtmlCode from '../lib/updateHeadBodyHtmlCode.js';
 
 // следить за pug-исходниками

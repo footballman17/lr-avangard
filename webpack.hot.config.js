@@ -2,23 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  // optimization: {
-  //   splitChunks: {
-  //     chunks: 'all',
-  //     minSize: 1,
-  //     minChunks: 2,
-  //     name: 'common-chunk',
-  //   },
-  // },
-  // точки входа
   entry: {
-    // common: ['./js/common.js'],
     main: ['@babel/polyfill', '../hot/main/index.js'],
     thankyou: ['@babel/polyfill', '../hot/thankyou/index.js'],
-    // main: ['../hot/main/index.js'],
-
-    // main: ['../hot/main/index.js'],
-    // thankyou: ['../hot/thankyou/index.js'],
+    policy: ['@babel/polyfill', '../hot/policy/index.js'],
   },
 
   output: {
@@ -95,19 +82,6 @@ module.exports = {
   },
 
   plugins: [
-    // new HtmlWebpackPlugin({
-    // filename: 'index.html',
-    // chunks: ['main', 'common', 'common-chunk'],
-    // template: '../hot/template.html',
-    //   common: ['./js/common.js'],
-    //   main: ['@babel/polyfill', './js/main/index.js'],
-    //   thankyou: ['./js/thankyou/index.js'],
-    // }),
-    // new HtmlWebpackPlugin({
-    //   filename: 'thankyou.html',
-    //   chunks: ['common', 'thankyou'],
-    //   template: '../hot/template.html',
-    // }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       chunks: ['main'],
@@ -116,6 +90,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'thankyou.html',
       chunks: ['thankyou'],
+      template: '../hot/template.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'policy.html',
+      chunks: ['policy'],
       template: '../hot/template.html',
     }),
   ],

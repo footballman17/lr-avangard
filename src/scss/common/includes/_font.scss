@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Clear Sans';
+  // src: local('Clear Sans'), url('../../assets/fonts/clearsans/clearsans.woff2') format('woff2'),
+  src: local('Clear Sans'), url('../../assets/fonts/clearsans/clearsans.woff2') format('woff2'),
+    url('../../assets/fonts/clearsans/clearsans.woff') format('woff'),
+    url('../../assets/fonts/clearsans/clearsans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: local('Clear Sans Bold'),
+    url('../../assets/fonts/clearsans/clearsansbold.woff2') format('woff2'),
+    url('../../assets/fonts/clearsans/clearsansbold.woff') format('woff'),
+    url('../../assets/fonts/clearsans/clearsansbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: local('Clear Sans Bold Italic'),
+    url('../../assets/fonts/clearsans/clearsansbolditalic.woff2') format('woff2'),
+    url('../../assets/fonts/clearsans/clearsansbolditalic.woff') format('woff'),
+    url('../../assets/fonts/clearsans/clearsansbolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: local('Clear Sans Italic'),
+    url('../../assets/fonts/clearsans/clearsansitalic.woff2') format('woff2'),
+    url('../../assets/fonts/clearsans/clearsansitalic.woff') format('woff'),
+    url('../../assets/fonts/clearsans/clearsansitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: local('Clear Sans Light'),
+    url('../../assets/fonts/clearsans/clearsanslight.woff2') format('woff2'),
+    url('../../assets/fonts/clearsans/clearsanslight.woff') format('woff'),
+    url('../../assets/fonts/clearsans/clearsanslight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: local('Clear Sans Medium'),
+    url('../../assets/fonts/clearsans/clearsansmedium.woff2') format('woff2'),
+    url('../../assets/fonts/clearsans/clearsansmedium.woff') format('woff'),
+    url('../../assets/fonts/clearsans/clearsansmedium.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: local('Clear Sans Medium'),
+    url('../../assets/fonts/clearsans/clearsansmediumitalic.woff2') format('woff2'),
+    url('../../assets/fonts/clearsans/clearsansmediumitalic.woff') format('woff'),
+    url('../../assets/fonts/clearsans/clearsansmediumitalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: local('Clear Sans Thin'),
+    url('../../assets/fonts/clearsans/clearsansthin.woff2') format('woff2'),
+    url('../../assets/fonts/clearsans/clearsansthin.woff') format('woff'),
+    url('../../assets/fonts/clearsans/clearsansthin.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Bold'),
+    url('../../assets/fonts/firasans/firasans-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local('Fira Sans ExtraBold'),
+    url('../../assets/fonts/firasans/firasans-extrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}

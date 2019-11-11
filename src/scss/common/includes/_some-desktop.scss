@@ -1,0 +1,10 @@
+.header-block {
+  &__text-h1 {
+    padding-right: 20px;
+    font-size: get-em(35);
+  }
+
+  &__text {
+    width: calc(100% / 12 * 5 - 30px);
+  }
+}

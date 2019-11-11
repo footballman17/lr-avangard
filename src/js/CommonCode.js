@@ -9,7 +9,6 @@ import './order.php';
 import './sendmailsmtpclass.php';
 import '../docs/tpl-email/tpl-email_v1.html';
 import '../google02d0585788951777.html';
-import '../.htaccess';
 
 const $ = require('jquery');
 

@@ -2,13 +2,13 @@
 	.header-block__max-width-wrap
 		.header-block__logo-section
 			.telephone
-				a(class ="telephone__link" href="tel:+74952412939" title="Позвонить") +7(495) 241-29-39
+				a(class ="telephone__link" href=phoneLink title="Позвонить") #{userPhone}
 			.logo
 				a(href="/" title="Сервис Ленд Ровер в Москве")
 					img(src=require("../../../assets/images/common/img__logo.svg") alt="Сервис Ленд Ровер в Москве" title="Сервис Ленд Ровер в Москве")
 			.menu
 				span.menu__span-text
-					| info@lr-avangard.ru
+					| #{userMail}
 				//- p.menu__span-block
 				//- 	span.menu__span-icon
 				//- 		svg(class="menu__icon" aria-hidden="true")
@@ -35,11 +35,11 @@
 					br
 					| Звоните: 
 					span
-						a(class = "header-block__a-phone" href="tel:+74952412939")
-							| +7(495) 241-29-39.
+						a(class = "header-block__a-phone" href=phoneLink)
+							| #{userPhone}
 					|  Приезжате:
 					br
-					| г. Москва, ул. Двинцев 3с6.
+					| #{userAddress}
 		//- .header-block__style-print
 		//- 	svg(class="header-block__style-print-img" aria-hidden="true")
 		//- 		use(xlink:href="/assets/images/common/sprite__icons.svg#pattern")

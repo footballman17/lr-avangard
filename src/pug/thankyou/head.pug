@@ -1,7 +1,7 @@
 head
 	meta(charset="utf-8")
 	meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
-	meta(name="description" content="Гарантируем лучшее предложение по Москве! Звоните: +7(495) 241-29-39. Приезжайте:  г. Москва, ул. Двинцев 3с6.")
+	meta(name="description" content=`Гарантируем лучшее предложение по Москве! Звоните: ${userPhone}. Приезжайте:  ${userAddress}.`)
 	meta(name="keywords" content="lr-premium, auto, land rover, range rover, range rover sport, range rover evoque, discovery, discovery sport, freelander 2")
 	meta(name="robots" content="index, follow")
 
@@ -11,7 +11,7 @@ head
 	meta(property='og:site_name', content=projectTitle)
 	meta(property='og:url', content=nameSite)
 	meta(property='og:title', content=projectTitle)
-	meta(property='og:description', content='Гарантируем лучшее предложение по Москве! Звоните: +7(495) 241-29-39. Приезжайте:  г. Москва, ул. Двинцев 3с6.')
+	meta(property='og:description', content=`Гарантируем лучшее предложение по Москве! Звоните:  ${userPhone}. Приезжайте:  ${userAddress}.`)
 	link(rel='image_src', href=require("../../assets/images/default/img__og-image-default.jpg"))
 	meta(property='og:image', content=require('../../assets/images/default/img__og-image-default.jpg'))
 	meta(property='og:image:width', content='1200')
@@ -20,7 +20,7 @@ head
 	// Social share for Twitter
 	meta(name='twitter:card', content='summary_large_image')
 	meta(name='twitter:title', content=projectTitle)
-	meta(name='twitter:description', content='Гарантируем лучшее предложение по Москве! Звоните: +7(495) 241-29-39. Приезжайте:  г. Москва, ул. Двинцев 3с6.')
+	meta(name='twitter:description', content=`Гарантируем лучшее предложение по Москве! Звоните:  ${userPhone}. Приезжайте:  ${userAddress}.`)
 	meta(name='twitter:image:src', content=require('../../assets/images/default/img__og-image-default.jpg'))
 	meta(name='twitter:url', content=nameSite)
 	meta(name='twitter:domain', content='/')

@@ -5,6 +5,7 @@ const servicesHandleObject = {
 
   // установить обработчик на переключатель карточки-услуги
   addClickHandle() {
+    servicesHandleObject.updateCntCheckedServices();
     $('.service__form-card-checkbox').click(function() {
       const currentElement = $(this);
       if (currentElement.attr('checked') === 'checked') {
@@ -12,7 +13,6 @@ const servicesHandleObject = {
       } else {
         servicesHandleObject.switchOnService(currentElement);
       }
-
       servicesHandleObject.updateCntCheckedServices();
     });
   },
@@ -80,6 +80,14 @@ const servicesHandleObject = {
     ) {
       $(element).text(`0${indx + 1}`);
     });
+
+    const listServices = $(
+      '.service__choose-list .service__choose-item-text'
+    ).map(function(indx, element) {
+      return $(element).text();
+    });
+
+    $('.modal-form-service').val(listServices.get().join(', '));
   },
 };
 

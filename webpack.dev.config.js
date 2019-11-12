@@ -109,7 +109,8 @@ module.exports = {
         loader: 'file-loader',
         options: {
           name() {
-            return '[path][name].[contenthash:6].[ext]';
+            return '[path][name].[ext]';
+            // return '[path][name].[contenthash:6].[ext]';
           },
         },
       },
@@ -145,6 +146,7 @@ module.exports = {
       {from: 'src/.htaccess', context: __dirname},
       {from: 'src/js/order.php', to: 'js/', context: __dirname},
       {from: 'src/js/sendmailsmtpclass.php', to: 'js/', context: __dirname},
+      {from: 'src/docs', to: 'docs/', context: __dirname},
     ]),
     // new AssetsPlugin({
     //   filename: 'assets.json',

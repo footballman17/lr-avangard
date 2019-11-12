@@ -58,8 +58,8 @@ $mailSMTP = new SendMailSmtpClass(
     // 'ssl://smtp.mail.ru', // host (use 'ssl://smtp.mail.ru' for Mail.RU)
     // 465, // port
     // 'UTF-8' // charset
-    'uppershow@mail.ru', // login
-    'pFf3S2Tuh1As', // password
+    'noreply@lr-avangard.ru', // login
+    '04112018Aa', // password
     'ssl://smtp.mail.ru', // host (use 'ssl://smtp.mail.ru' for Mail.RU)
     465, // port
     'UTF-8' // charset
@@ -70,7 +70,7 @@ $from = array(
     // 'LR Avangard Автосервис', // name
     // 'noreply@lr-avangard.ru', // email (use 'login' from $mailSMTP class for Mail.RU)
     'LR Avangard Автосервис', // name
-    'uppershow@mail.ru', // email (use 'login' from $mailSMTP class for Mail.RU)
+    'noreply@lr-avangard.ru', // email (use 'login' from $mailSMTP class for Mail.RU)
 );
 
 // to

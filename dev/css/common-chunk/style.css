@@ -129,61 +129,61 @@ table {
 
 @font-face {
   font-family: 'Clear Sans';
-  src: local("Clear Sans"), url(/assets/fonts/clearsans/clearsans.2e81f3.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsans.76c7e8.woff) format("woff"), url(/assets/fonts/clearsans/clearsans.006ab1.ttf) format("truetype");
+  src: local("Clear Sans"), url(/assets/fonts/clearsans/clearsans.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsans.woff) format("woff"), url(/assets/fonts/clearsans/clearsans.ttf) format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Clear Sans';
-  src: local("Clear Sans Bold"), url(/assets/fonts/clearsans/clearsansbold.0d651f.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsansbold.f1d326.woff) format("woff"), url(/assets/fonts/clearsans/clearsansbold.3c8c6c.ttf) format("truetype");
+  src: local("Clear Sans Bold"), url(/assets/fonts/clearsans/clearsansbold.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsansbold.woff) format("woff"), url(/assets/fonts/clearsans/clearsansbold.ttf) format("truetype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'Clear Sans';
-  src: local("Clear Sans Bold Italic"), url(/assets/fonts/clearsans/clearsansbolditalic.24f255.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsansbolditalic.cc7e2d.woff) format("woff"), url(/assets/fonts/clearsans/clearsansbolditalic.8650b8.ttf) format("truetype");
+  src: local("Clear Sans Bold Italic"), url(/assets/fonts/clearsans/clearsansbolditalic.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsansbolditalic.woff) format("woff"), url(/assets/fonts/clearsans/clearsansbolditalic.ttf) format("truetype");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: 'Clear Sans';
-  src: local("Clear Sans Italic"), url(/assets/fonts/clearsans/clearsansitalic.e29902.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsansitalic.dc7ded.woff) format("woff"), url(/assets/fonts/clearsans/clearsansitalic.ad4111.ttf) format("truetype");
+  src: local("Clear Sans Italic"), url(/assets/fonts/clearsans/clearsansitalic.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsansitalic.woff) format("woff"), url(/assets/fonts/clearsans/clearsansitalic.ttf) format("truetype");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
   font-family: 'Clear Sans';
-  src: local("Clear Sans Light"), url(/assets/fonts/clearsans/clearsanslight.8eede0.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsanslight.f10f3e.woff) format("woff"), url(/assets/fonts/clearsans/clearsanslight.0595c8.ttf) format("truetype");
+  src: local("Clear Sans Light"), url(/assets/fonts/clearsans/clearsanslight.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsanslight.woff) format("woff"), url(/assets/fonts/clearsans/clearsanslight.ttf) format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Clear Sans';
-  src: local("Clear Sans Medium"), url(/assets/fonts/clearsans/clearsansmedium.f5e576.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsansmedium.38e4c2.woff) format("woff"), url(/assets/fonts/clearsans/clearsansmedium.47b045.ttf) format("truetype");
+  src: local("Clear Sans Medium"), url(/assets/fonts/clearsans/clearsansmedium.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsansmedium.woff) format("woff"), url(/assets/fonts/clearsans/clearsansmedium.ttf) format("truetype");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: 'Clear Sans';
-  src: local("Clear Sans Medium"), url(/assets/fonts/clearsans/clearsansmediumitalic.b37650.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsansmediumitalic.d248c8.woff) format("woff"), url(/assets/fonts/clearsans/clearsansmediumitalic.dafad5.ttf) format("truetype");
+  src: local("Clear Sans Medium"), url(/assets/fonts/clearsans/clearsansmediumitalic.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsansmediumitalic.woff) format("woff"), url(/assets/fonts/clearsans/clearsansmediumitalic.ttf) format("truetype");
   font-weight: 600;
   font-style: italic; }
 
 @font-face {
   font-family: 'Clear Sans';
-  src: local("Clear Sans Thin"), url(/assets/fonts/clearsans/clearsansthin.93fc5b.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsansthin.4871ae.woff) format("woff"), url(/assets/fonts/clearsans/clearsansthin.1f62f4.ttf) format("truetype");
+  src: local("Clear Sans Thin"), url(/assets/fonts/clearsans/clearsansthin.woff2) format("woff2"), url(/assets/fonts/clearsans/clearsansthin.woff) format("woff"), url(/assets/fonts/clearsans/clearsansthin.ttf) format("truetype");
   font-weight: 200;
   font-style: normal; }
 
 @font-face {
   font-family: 'Fira Sans';
-  src: local("Fira Sans Bold"), url(/assets/fonts/firasans/firasans-bold.720965.otf) format("opentype");
+  src: local("Fira Sans Bold"), url(/assets/fonts/firasans/firasans-bold.otf) format("opentype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'Fira Sans';
-  src: local("Fira Sans ExtraBold"), url(/assets/fonts/firasans/firasans-extrabold.798ce6.otf) format("opentype");
+  src: local("Fira Sans ExtraBold"), url(/assets/fonts/firasans/firasans-extrabold.otf) format("opentype");
   font-weight: 800;
   font-style: normal; }
 
@@ -383,7 +383,7 @@ body {
     margin: 0 auto;
     padding-bottom: 9.375rem;
     max-width: 1290px;
-    background: url(/assets/images/pages/home/img__gifts-bg.d55622.jpg) no-repeat;
+    background: url(/assets/images/pages/home/img__gifts-bg.jpg) no-repeat;
     background-position: top center;
     background-size: cover; }
   .gifts__content-wrap {
@@ -784,7 +784,7 @@ body {
     margin: 0 auto;
     padding-bottom: 14.375rem;
     width: calc(100% / 12 * 10 - 15px);
-    background: url(/assets/images/pages/home/img__action-bg.d8c467.jpg), rgba(0, 0, 0, 0.6) top left no-repeat;
+    background: url(/assets/images/pages/home/img__action-bg.jpg), rgba(0, 0, 0, 0.6) top left no-repeat;
     background-size: cover;
     background-blend-mode: overlay; }
   .action__header {
@@ -1153,19 +1153,19 @@ body {
   -webkit-box-shadow: 0 35px 50px 10px rgba(214, 0, 0, 0.2);
           box-shadow: 0 35px 50px 10px rgba(214, 0, 0, 0.2); }
   .service__cards-wrap-item-image__service_01 {
-    background: url(/assets/images/pages/home/img__about-service-01.ed5c33.jpg) top left no-repeat;
+    background: url(/assets/images/pages/home/img__about-service-01.jpg) top left no-repeat;
     background-size: cover; }
   .service__cards-wrap-item-image__service_02 {
-    background: url(/assets/images/pages/home/img__about-service-02.7cef42.jpg) top left no-repeat;
+    background: url(/assets/images/pages/home/img__about-service-02.jpg) top left no-repeat;
     background-size: cover; }
   .service__cards-wrap-item-image__service_03 {
-    background: url(/assets/images/pages/home/img__about-service-03.035769.jpg) top left no-repeat;
+    background: url(/assets/images/pages/home/img__about-service-03.jpg) top left no-repeat;
     background-size: cover; }
   .service__cards-wrap-item-image__service_04 {
-    background: url(/assets/images/pages/home/img__about-service-04.305e35.jpg) top left no-repeat;
+    background: url(/assets/images/pages/home/img__about-service-04.jpg) top left no-repeat;
     background-size: cover; }
   .service__cards-wrap-item-image__service_05 {
-    background: url(/assets/images/pages/home/img__about-service-05.a54158.jpg) top left no-repeat;
+    background: url(/assets/images/pages/home/img__about-service-05.jpg) top left no-repeat;
     background-size: cover; }
 
 .service__white-background {
@@ -1520,7 +1520,7 @@ body {
   overflow: scroll;
   width: calc(100% / 12 * 11 - 15px);
   height: 700px;
-  background: url(/assets/images/common/img__modal-form-bg.9cfa68.jpg) top left no-repeat;
+  background: url(/assets/images/common/img__modal-form-bg.jpg) top left no-repeat;
   background-size: cover; }
   .modal__content-wrap {
     margin: 0 auto;

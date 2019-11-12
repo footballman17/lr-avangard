@@ -1,0 +1,39 @@
+body
+  .header-block
+    .header-block__max-width-wrap
+      .header-block__logo-section
+        .telephone
+          a(class ="telephone__link" href=phoneLink title="Позвонить") #{userPhone}
+        .logo
+          a(href="/" title="Сервис Ленд Ровер в Москве")
+            img(src=require("../../assets/images/common/img__logo.svg") alt="Сервис Ленд Ровер в Москве" title="Сервис Ленд Ровер в Москве")
+        .menu
+          p.menu__span-block
+            span.menu__span-icon
+              a(href="/")
+                svg(class="menu__icon" aria-hidden="true")
+                  use(xlink:href=require("../../assets/images/common/sprite__icons.svg") + "#arrow-left")
+            span.menu__span-text
+              a(href="/")
+                | на главную
+      .header-block__line-block
+        hr.header-block__hr
+      .header-block__left-wrap
+        .header-block__lr__page404_true
+          p.header-block__lr-text__page404_true
+            | 404
+        .header-block__avangard
+          p.header-block__avangard-p
+            | Ошибка
+        .header-block__car
+          img(class="header-block__car-img" src=require("../../assets/images/pages/404/img__main-screen-car.jpg"))
+      .header-block__text-wrap
+        .header-block__text
+          h1.header-block__text-h1
+            | Ошибка 404. Такой страницы нет!
+          p.header-block__text-description__page404_true
+            | Вы находитесь здесь, потому что ввели адрес страницы, которая уже не существует, была перемещена по другому адресу или доступ к ней Вам запрещен :(
+      .header-block__style-print
+        svg(class="header-block__style-print-img" aria-hidden="true")
+          use(xlink:href=require("../../assets/images/common/sprite__icons.svg") + "#pattern")
+      .header-block__padding-block

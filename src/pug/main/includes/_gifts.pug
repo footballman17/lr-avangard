@@ -1,0 +1,77 @@
+.gifts
+  .gifts__max-width-wrap
+    .gifts__content-wrap
+      .gifts__text-block
+        h2.gifts__h2
+          | Подарки в честь знакомства!
+        p.gifts__desc-text
+          | Мы подготовили несколько вариантов, какой, вы выберете сами: *
+      .gifts__cards-wrap
+        div(class="card-gift card-gift__border_no-opacity")
+          p(class="card-gift__number card-gift__number__display_none")
+            | 01
+          ul.card-gift__ul-choose
+            li.card-gift__ellipse
+            li.card-gift__choose-text
+              | выбрано
+          .card-gift__image-wrap
+            svg(class="card-gift__image-oil" aria-hidden="true")
+              use(xlink:href=require("../../../assets/images/common/sprite__icons.svg") + "#oil")
+          p.card-gift__desc-text
+            | Моторное масло в подарок при проведении полного ТО
+        .card-gift
+          p.card-gift__number
+            | 02
+          ul(class="card-gift__ul-choose card-gift__ul-choose__display_none")
+            li.card-gift__ellipse
+            li.card-gift__choose-text
+              | выбрано
+          .card-gift__image-wrap
+            svg(class="card-gift__image-oil" aria-hidden="true")
+              use(xlink:href=require("../../../assets/images/common/sprite__icons.svg") + "#gearbox")
+          p.card-gift__desc-text
+            | Работа по замене масла в АКПП при покупке расходных материалов
+        .card-gift
+          p.card-gift__number
+            | 03
+          ul(class="card-gift__ul-choose card-gift__ul-choose__display_none")
+            li.card-gift__ellipse
+            li.card-gift__choose-text
+              | выбрано
+          .card-gift__image-wrap
+            svg(class="card-gift__image-oil" aria-hidden="true")
+              use(xlink:href=require("../../../assets/images/common/sprite__icons.svg") + "#antifreeze")
+          p.card-gift__desc-text
+            | 35% скидка на услугу мойки радиаторов
+      form.gifts-form
+        // Hidden Required Fields
+        input(type='hidden', name='project_name', value=projectName)
+        input(type='hidden', name='admin_email', value=adminEmail)
+        input(type='hidden', name='mail_subject', value=`Заявка с сайта "${nameSite}"`)
+        // Hidden Advanced Fields
+        input(class="modal__form-page", type="hidden", name="Страница", value=pageTitle)
+        input(class="modal__form-type", type="hidden", name="Форма", value="Форма заявки - подарки в честь знакомства")
+        input(class="modal-form-gifts", type="hidden", name="Услуга", value="не задана")
+        // UTM fields
+        input(type="hidden" name="Канал трафика" value="" class="utm_medium")
+        input(type="hidden" name="Источник трафика" value="" class="utm_source")
+        input(type="hidden" name="Название кампании" value="" class="utm_campaign")
+        input(type="hidden" name="Ключевое слово" value="" class="utm_term")
+        input(type="hidden" name="Содержание кампании" value="" class="utm_content")
+        .gifts-form__field__name
+          label(class="gifts-form__label" for="input-name-gf")
+            | ваше имя
+          input(class="gifts-form__input", id="input-name-gf" type="text", maxlength="100", name="Имя", required="true")
+        .gifts-form__field__phone
+          label(class="gifts-form__label" for="input-phone-gf")
+            | телефон
+          input(class="gifts-form__input", id="input-phone-gf" placeholder="+7" type="tel", maxlength="15", name="Телефон", required="true")
+        .gifts-form__button-wrap
+          button(class="gifts-form__button" type="submit")
+            | Отправить
+      .gifts__star-text-wrap
+        p.gifts__star-text
+          | * подробные условия акции у мастеров-приемщиков
+      .gifts__style-print
+        svg(class="gifts__style-print-img" aria-hidden="true")
+          use(xlink:href=require("../../../assets/images/common/sprite__icons.svg") + "#pattern")

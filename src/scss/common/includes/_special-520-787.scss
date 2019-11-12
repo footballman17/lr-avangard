@@ -1,0 +1,19 @@
+.modal {
+  &__h2 {
+    padding-bottom: get-rem(30);
+    font-size: get-em(24);
+    line-height: 1.2em;
+  }
+
+  &__fill-text {
+    font-size: get-em(16);
+  }
+
+  &__text-block {
+    padding-top: get-rem(50);
+  }
+
+  &__form {
+    padding-top: get-rem(30);
+  }
+}

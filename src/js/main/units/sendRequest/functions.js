@@ -24,7 +24,7 @@ module.exports = {
   async sendFormRequest(url, data) {
     try {
       const response = await axios.post(url, data);
-      if (response !== 'Done') {
+      if (response.data !== 'Done') {
         throw new ServerResponseError(
           `Ошибка при отправке заявки на сервер! Details: ${response.data}`
         );

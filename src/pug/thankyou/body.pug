@@ -3,7 +3,7 @@ body
     .header-block__max-width-wrap
       .header-block__logo-section
         .telephone
-          a(class ="telephone__link" href="tel:+7(495)241-29-89" title="Позвонить") +7(495) 241-29-39
+          a(class ="telephone__link" href=phoneLink title="Позвонить") #{userPhone}
         .logo
           a(href="/" title="Сервис Ленд Ровер в Москве")
             img(src=require("../../assets/images/common/img__logo.svg") alt="Сервис Ленд Ровер в Москве" title="Сервис Ленд Ровер в Москве")
@@ -12,7 +12,7 @@ body
             span.menu__span-icon
               a(href="/")
                 svg(class="menu__icon" aria-hidden="true")
-                  use(xlink:href=require("../../assets/images/common/sprite__icons.svg") + "arrow-left")
+                  use(xlink:href=require("../../assets/images/common/sprite__icons.svg") + "#arrow-left")
             span.menu__span-text
               a(href="/")
                 | на главную

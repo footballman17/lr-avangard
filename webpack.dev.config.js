@@ -23,6 +23,7 @@ module.exports = {
     main: ['@babel/polyfill', './js/main/index.js'],
     thankyou: ['./js/thankyou/index.js'],
     policy: ['./js/policy/index.js'],
+    page404: ['./js/page404/index.js'],
   },
 
   output: {
@@ -108,7 +109,8 @@ module.exports = {
         loader: 'file-loader',
         options: {
           name() {
-            return '[path][name].[contenthash:6].[ext]';
+            return '[path][name].[ext]';
+            // return '[path][name].[contenthash:6].[ext]';
           },
         },
       },
@@ -144,6 +146,10 @@ module.exports = {
       {from: 'src/.htaccess', context: __dirname},
       {from: 'src/js/order.php', to: 'js/', context: __dirname},
       {from: 'src/js/sendmailsmtpclass.php', to: 'js/', context: __dirname},
+<<<<<<< HEAD
+      {from: 'src/docs', to: 'docs/', context: __dirname},
+=======
+>>>>>>> b5fd859d58eb9e9efbb9b5f11bb2be059bf1fd85
     ]),
     // new AssetsPlugin({
     //   filename: 'assets.json',
@@ -168,8 +174,13 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'policy.html',
-      chunks: ['policy', 'common', 'common-chunk', 'main'],
+      chunks: ['page404', 'common', 'common-chunk', 'main'],
       template: './pug/policy/index.pug',
+    }),
+    new HtmlWebpackPlugin({
+      filename: '404.html',
+      chunks: ['page404', 'common', 'common-chunk', 'main'],
+      template: './pug/page404/index.pug',
     }),
   ],
 };

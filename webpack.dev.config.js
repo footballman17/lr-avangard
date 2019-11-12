@@ -3,7 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
+const CopyPlugin = require('copy-webpack-plugin');
 // const AssetsPlugin = require('assets-webpack-plugin');
+console.log(__dirname);
 
 module.exports = {
   optimization: {
@@ -111,7 +113,7 @@ module.exports = {
         },
       },
       {
-        test: /(android-chrome-192x192.png)|(android-chrome-512x512.png)|(img__map-pin.svg)|(\.(php|html|htaccess))/i,
+        test: /(android-chrome-192x192.png)|(android-chrome-512x512.png)|(img__map-pin.svg)|(\.(php|html))/i,
         loader: 'file-loader',
         options: {
           name() {
@@ -137,6 +139,12 @@ module.exports = {
       filename: 'css/[name]/style.css',
     }),
     new CleanWebpackPlugin({}),
+    new CopyPlugin([
+      {from: 'src/google02d0585788951777.html', context: __dirname},
+      {from: 'src/.htaccess', context: __dirname},
+      {from: 'src/js/order.php', to: 'js/', context: __dirname},
+      {from: 'src/js/sendmailsmtpclass.php', to: 'js/', context: __dirname},
+    ]),
     // new AssetsPlugin({
     //   filename: 'assets.json',
     //   path: path.resolve(__dirname, 'dev/js'),

@@ -243,23 +243,29 @@ body {
     width: 100%;
     height: 30rem;
     background-color: #e6e6e6; }
-  .header-block__lr {
+  .header-block__lr, .header-block__lr__page404_true {
     position: absolute;
     z-index: 2;
     top: -100px;
     right: -20px; }
-  .header-block__lr-text {
+    .header-block__lr__page404_true {
+      top: -60px;
+      right: -80px; }
+  .header-block__lr-text, .header-block__lr-text__page404_true {
     font-family: 'Fira Sans', sans-serif;
     font-size: 34.375em;
     font-weight: 800; }
+    .header-block__lr-text__page404_true {
+      font-size: 23.125em;
+      font-weight: 800; }
   .header-block__avangard {
     position: absolute;
     z-index: 4;
-    top: 105px;
-    right: -260px; }
+    top: 65px;
+    right: -215px; }
   .header-block__avangard-p {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 7.5em;
+    font-size: 7.1875em;
     font-weight: 700;
     color: #d60000;
     -webkit-transform: rotate(-90deg);
@@ -288,7 +294,7 @@ body {
     font-size: 2.5em;
     line-height: 1.2em;
     color: black; }
-  .header-block__text-description, .header-block__text-description__thankyou_true {
+  .header-block__text-description, .header-block__text-description__thankyou_true, .header-block__text-description__page404_true {
     padding-top: 3.125em;
     font-family: 'Clear Sans', sans-serif;
     font-size: 1.125em;
@@ -296,6 +302,8 @@ body {
     color: #373737; }
     .header-block__text-description__thankyou_true {
       padding-right: 15px; }
+    .header-block__text-description__page404_true {
+      color: #373737; }
   .header-block__style-print {
     position: absolute;
     z-index: 5;
@@ -1700,13 +1708,15 @@ body {
     right: -15px; }
   .header-block__car-img {
     width: 180px; }
-  .header-block__lr {
+  .header-block__lr, .header-block__lr__page404_true {
     z-index: 2;
-    top: 0;
-    right: 30px; }
-  .header-block__lr-text {
+    top: 15px;
+    right: -12px; }
+  .header-block__lr-text, .header-block__lr-text__page404_true {
     font-size: 120px; }
-  .header-block__text-description, .header-block__text-description__thankyou_true {
+    .header-block__lr-text__page404_true {
+      font-size: 5em; }
+  .header-block__text-description, .header-block__text-description__thankyou_true, .header-block__text-description__page404_true {
     padding-top: 1.875em;
     padding-right: 10px;
     font-size: 8.5px; }
@@ -2039,13 +2049,18 @@ body {
     right: -40px; }
   .header-block__car-img {
     width: 280px; }
-  .header-block__lr {
+  .header-block__lr, .header-block__lr__page404_true {
     z-index: 2;
     top: 0;
     right: 30px; }
-  .header-block__lr-text {
+    .header-block__lr__page404_true {
+      top: 0;
+      right: -45px; }
+  .header-block__lr-text, .header-block__lr-text__page404_true {
     font-size: 180px; }
-  .header-block__text-description, .header-block__text-description__thankyou_true {
+    .header-block__lr-text__page404_true {
+      font-size: 10em; }
+  .header-block__text-description, .header-block__text-description__thankyou_true, .header-block__text-description__page404_true {
     padding-top: 1.875em;
     padding-right: 20px;
     font-size: 12px; }
@@ -2293,13 +2308,18 @@ body {
     right: -80px; }
   .header-block__car-img {
     width: 500px; }
-  .header-block__lr {
+  .header-block__lr, .header-block__lr__page404_true {
     z-index: 2;
     top: -100px;
     right: 0; }
-  .header-block__lr-text {
+    .header-block__lr__page404_true {
+      top: -50px;
+      right: -85px; }
+  .header-block__lr-text, .header-block__lr-text__page404_true {
     font-size: 28.75em; }
-  .header-block__text-description, .header-block__text-description__thankyou_true {
+    .header-block__lr-text__page404_true {
+      font-size: 18.75em; }
+  .header-block__text-description, .header-block__text-description__thankyou_true, .header-block__text-description__page404_true {
     padding-right: 20px; }
   .header-block__text-wrap {
     padding-bottom: 6.25rem; }

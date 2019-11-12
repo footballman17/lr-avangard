@@ -23,6 +23,7 @@ module.exports = {
     main: ['@babel/polyfill', './js/main/index.js'],
     thankyou: ['./js/thankyou/index.js'],
     policy: ['./js/policy/index.js'],
+    page404: ['./js/page404/index.js'],
   },
 
   output: {
@@ -168,8 +169,13 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'policy.html',
-      chunks: ['policy', 'common', 'common-chunk', 'main'],
+      chunks: ['page404', 'common', 'common-chunk', 'main'],
       template: './pug/policy/index.pug',
+    }),
+    new HtmlWebpackPlugin({
+      filename: '404.html',
+      chunks: ['page404', 'common', 'common-chunk', 'main'],
+      template: './pug/page404/index.pug',
     }),
   ],
 };

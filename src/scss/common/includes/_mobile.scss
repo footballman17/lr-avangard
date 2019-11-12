@@ -46,12 +46,16 @@
 
   &__lr {
     z-index: 2;
-    top: 0;
-    right: 30px;
+    top: 15px;
+    right: -12px;
   }
 
   &__lr-text {
     font-size: 120px;
+
+    &__page404_true {
+      font-size: get-em(80);
+    }
   }
 
   &__text-description {

@@ -35,10 +35,19 @@
     z-index: 2;
     top: -100px;
     right: 0;
+
+    &__page404_true {
+      top: -50px;
+      right: -85px;
+    }
   }
 
   &__lr-text {
     font-size: get-em(460);
+
+    &__page404_true {
+      font-size: get-em(300);
+    }
   }
 
   &__text-description {

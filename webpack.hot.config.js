@@ -7,6 +7,7 @@ module.exports = {
     main: ['@babel/polyfill', '../hot/main/index.js'],
     thankyou: ['@babel/polyfill', '../hot/thankyou/index.js'],
     policy: ['@babel/polyfill', '../hot/policy/index.js'],
+    page404: ['@babel/polyfill', '../hot/page404/index.js'],
   },
 
   output: {
@@ -102,6 +103,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'policy.html',
       chunks: ['policy'],
+      template: '../hot/template.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: '404.html',
+      chunks: ['page404'],
       template: '../hot/template.html',
     }),
   ],

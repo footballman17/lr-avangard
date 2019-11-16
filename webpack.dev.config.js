@@ -146,7 +146,10 @@ module.exports = {
       {from: 'src/.htaccess', context: __dirname},
       {from: 'src/js/order.php', to: 'js/', context: __dirname},
       {from: 'src/js/sendmailsmtpclass.php', to: 'js/', context: __dirname},
+<<<<<<< HEAD
       {from: 'src/docs', to: 'docs/', context: __dirname},
+=======
+>>>>>>> b5fd859d58eb9e9efbb9b5f11bb2be059bf1fd85
     ]),
     // new AssetsPlugin({
     //   filename: 'assets.json',

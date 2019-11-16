@@ -53,14 +53,8 @@ require_once 'sendmailsmtpclass.php';
 
 // settings
 $mailSMTP = new SendMailSmtpClass(
-    // 'noreply@lr-avangard.ru', // login
-    // '04112018Aa', // password
-    // 'ssl://smtp.mail.ru', // host (use 'ssl://smtp.mail.ru' for Mail.RU)
-    // 465, // port
-    // 'UTF-8' // charset
-    'noreply@lr-avangard.ru', // login
-    '04112018Aa', // password
-    'ssl://smtp.mail.ru', // host (use 'ssl://smtp.mail.ru' for Mail.RU)
+    /*
+    */
     465, // port
     'UTF-8' // charset
 );
@@ -70,7 +64,6 @@ $from = array(
     // 'LR Avangard Автосервис', // name
     // 'noreply@lr-avangard.ru', // email (use 'login' from $mailSMTP class for Mail.RU)
     'LR Avangard Автосервис', // name
-    'noreply@lr-avangard.ru', // email (use 'login' from $mailSMTP class for Mail.RU)
 );
 
 // to

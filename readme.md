@@ -10,8 +10,6 @@ PHP*
 Верстка сайта [lr-avangard.ru](https://lr-avangard.ru/)
 =============================
 
-
-
 ### Задача
 
 1. Сверстать по psd-макету сайт [lr-avangrad.ru](https://lr-avangard.ru/) — автосервис **Ленд Ровер.**
@@ -74,12 +72,6 @@ PHP*
 - При разработке использовался ESLint от [Wesbos](https://github.com/wesbos/eslint-config-wesbos), в основе которого лежит [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
 - Линтинг scss-файлов - по примеру [данной сборки](https://github.com/v1z/linters-example).
-
-
-
-
-
-
 
 
 

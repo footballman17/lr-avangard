@@ -89,6 +89,12 @@ module.exports = {
       {from: 'src/.htaccess', context: __dirname},
       {from: 'src/js/order.php', to: 'js/', context: __dirname},
       {from: 'src/js/sendmailsmtpclass.php', to: 'js/', context: __dirname},
+      {from: 'src/docs', to: 'docs/', context: __dirname},
+      {
+        from: 'src/assets/images/default/img__tpl-email-top.jpg',
+        to: 'assets/images/default/',
+        context: __dirname,
+      },
     ]),
     new HtmlWebpackPlugin({
       filename: 'index.html',

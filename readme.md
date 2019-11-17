@@ -40,13 +40,13 @@ PHP*
 
 ### Решение
 
-- поставленная задача решалась с помощью технологий:
-* Pug
-* SCSS
-* Flexbox
-* JS (ES 2015+, jQuery)
-* Webpack
-* PHP
+- Поставленная задача решалась с помощью технологий:
+    * Pug
+    * SCSS
+    * Flexbox
+    * JS (ES 2015+, jQuery)
+    * Webpack
+    * PHP
 
 - Для выполнения запросов к серверу использовалась библиотека [axios](https://github.com/axios/axios)
 

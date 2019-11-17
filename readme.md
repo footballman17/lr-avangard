@@ -5,7 +5,7 @@ JS (ES 2015+), jQuery,
 Webpack,
 PHP*
 
-<p align="center"><img src="https://lr-avangard.ru/assets/images/default/img__tpl-email-top.jpg" width="320"></p>
+<p align="center"><img src="https://lr-avangard.ru/assets/images/default/img__tpl-email-top.jpg" width="520"></p>
 
 Верстка сайта [lr-avangard.ru](https://lr-avangard.ru/)
 =============================
